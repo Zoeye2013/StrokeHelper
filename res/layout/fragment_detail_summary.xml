@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_summary_patient_id"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/info_patient_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_summary_doctor_id"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/info_doctor_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </TableRow>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_blue" />
+
+  <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+ -->
+<!--         <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:fillViewport="true" > -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:paddingBottom="20dp"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/view_summary_general"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_general" />
+
+                <include
+                    android:id="@+id/view_summary_finding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_findings" />
+                
+                <include
+                    android:id="@+id/view_summary_anamnesis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_anamnesis" />
+                
+                <include
+                    android:id="@+id/view_summary_present_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_present_condition" />
+                
+                <include
+                    android:id="@+id/view_summary_rest_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_rest_symptoms" />
+                <include
+                    android:id="@+id/view_summary_process_rationale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_process_rationale" />
+                <include
+                    android:id="@+id/view_summary_thrombolysis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/fragment_detail_summary_thrombolysis" />
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

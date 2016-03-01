@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/option_select_patient"
+        android:actionLayout="@layout/action_bar_custom_spinner"
+        android:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/option_interrupt_process"
+        android:title="@string/imgbtn_interr_process"
+        android:showAsAction="always|withText"
+        android:visible="false"/>
+    <item
+        android:id="@+id/option_interrupt_treatment"
+        android:title="@string/imgbtn_interrupt"
+        android:showAsAction="always|withText"
+        android:visible="false"/>
+    
+    <item
+        android:id="@+id/option_editing_time"
+        android:title="@string/imgbtn_editing"/>
+    
+    <item
+        android:id="@+id/option_share"
+        android:title="Share"
+        android:visible="false"/>
+    <item
+        android:id="@+id/option_setting"
+        android:title="Setting"
+        android:visible="false"/>
+    <item
+        android:id="@+id/option_logout"
+        android:title="Log out"/>
+
+</menu>

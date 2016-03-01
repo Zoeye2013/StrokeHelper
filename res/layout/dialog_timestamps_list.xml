@@ -1,0 +1,377 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+	<Button android:id="@+id/imgbtn_back"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/imgbtn_back"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/imgbtn_back">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+
+            <!-- Birthday -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_birthday"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Onset time -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_onset"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_onset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_onset_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Estimate arrival time -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_estimate_arrival"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_estimate_arrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_estimate_arrival_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Birthday -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_door"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_door"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_patient_at_door_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- CT begin -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_ct_begin"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_ct_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_ct_begin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- CT end -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_ct_end"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_ct_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_ct_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+            <!-- Thrombolysis decision -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_thrombo_decision"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_thrombo_decision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_thrombo_decision_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Thrombolysis bolus -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_bolus"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_bolus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_bolus_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Thrombolysis infusion begin -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_infusion_begin"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_infusion_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_infusion_begin_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+
+            <!-- Thrombolysis infusion begin -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_infusion_end"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_infusion_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_infusion_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+            <!-- Thrombolysis infusion begin -->
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_time_follow_up"
+                    android:textSize="16sp"
+                    android:textColor="@color/bright_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/info_time_follow_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/green"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_edit_follow_up_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/imgbtn_edit" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>

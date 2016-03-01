@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_time_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_time_over"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_time_unknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_time_unknown"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_ic_bleeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_ic_bleeding"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_major_bleeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_major_bleeding"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_uncontrol_bleeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_uncontrol_bleeding"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_hellp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_hellp"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_terminal_ill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_terminal_ill"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_not_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_not_stroke"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_heparin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_heparin"
+            android:textSize="14sp" />
+        <CheckBox
+            android:id="@+id/radio_candidate_reason_myocardial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_candidate_reason_myocardial"
+            android:textSize="14sp" />
+        
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/radio_candidate_reason_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_other_what"
+                android:textSize="14sp" />
+
+            <fi.etla.strokehelper.common.MyEditText
+                android:id="@+id/edit_other_what"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:minWidth="250dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/imgbtn_save" />
+
+</LinearLayout>

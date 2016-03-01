@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:binding="http://www.gueei.com/android-binding/"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+	
+    <TextView android:id="@+id/info_contraindications_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_1"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_2"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_3"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_4"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_5"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_6"
+        android:background="@color/red" >
+    </TextView>
+<TextView android:id="@+id/info_contraindications_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_7"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_8"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_9"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_10"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_11"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_12"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_13"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_14"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_15"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_16"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_17"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_18"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_19"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_20"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_21"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_22"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_23"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_24"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_25"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_26"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_27"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_28"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_29"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_30"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_31"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_32"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_33"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_34"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_35"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_36"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_37"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_38"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_39"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_40"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_41"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_42"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_43"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_44"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_45"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_46"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_47"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_48"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_49"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_50"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_51"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_52"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_53"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_54"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_55"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_56"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_57"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_58"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_59"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_60"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_61"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_62"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_63"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_64"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_65"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_66"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_67"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_68"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_69"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_70"
+        android:background="@color/red" >
+    </TextView>
+    <TextView android:id="@+id/info_contraindications_71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_contraindications_71"
+        android:background="@color/red" >
+    </TextView>
+    
+    </LinearLayout>
+</ScrollView>

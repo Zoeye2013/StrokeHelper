@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_patient_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/row_one"
+        android:background="@color/dark_blue" />
+
+    <ScrollView
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_one"
+        android:layout_marginBottom="30dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/comple_acute_bleeding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/info_present_active_bleeding"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_active_bleeding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_active_bleeding_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_active_bleeding_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_active_bleeding_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/view_anticoagulant_medication"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_present_conditions_anticoagulant" />
+
+            <include
+                android:id="@+id/view_cardiovascular_infections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                layout="@layout/fragment_detail_tab_present_conditions_cardiovascular_infections" />
+
+            <include
+                android:id="@+id/view_obstetric_contraindications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                layout="@layout/fragment_detail_tab_present_conditions_obstetric" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/comple_terminal_disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/info_symptom_terminal_disease"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_terminal_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <TextView android:id="@+id/comple_other_present_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/info_other_present_condition"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_other_present_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_other_present_condition_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_other_present_condition_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_save" />
+
+</RelativeLayout>

@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Stroke Helper</string>
+    <string name="title_item_detail">Item Detail</string>
+    
+    <!-- Color -->
+    <color name="green">#00FF00</color>
+    <color name="dark_green">#00CC00</color>
+    
+    <color name="orange">#FF9900</color>
+    <color name="yellow">#ffff00</color>
+    <color name="red">#FF0000</color>
+    
+    <color name="bright_blue">#00FFFF</color>
+    <color name="sky_blue">#11A4D9</color>
+	<color name="dark_blue">#3399FF</color>
+	<color name="table_blue">#99CCFF</color>
+	<color name="table_blue_light">#D1F0FF</color>
+	<color name="purple">#CC99FF</color>
+	<color name="dark_purple">#5C00B8</color>
+	
+    <color name="grey">#B8B8B8</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+	
+	<string name="spinner_promt">Select patient</string>
+    
+    <!-- Radio button -->
+    <string name="radio_known">Known</string>
+    <!-- Patient -->
+    <string name="radio_predoor">PreDoor</string>
+    <string name="radio_door">Door</string>
+    <string name="radio_postdoor">PostDoor</string>
+    <!-- Onset time -->
+    <string name="radio_known_onset">Known onset</string>
+    <string name="radio_woke_up_symptom">Symptoms (Wake up)</string>
+    <string name="radio_yes">Yes</string>
+    <string name="radio_no">No</string>
+    <string name="radio_unknown">Unknown</string>
+    <string name="radio_last_symptom_free_time">Last symptom-free</string>
+    <!-- Thrombolysis candidate -->
+    <string name="radio_candidate_reason_time_over">Time from the onset of symptoms is \u003E 4,5 hours</string>
+    <string name="radio_candidate_reason_time_unknown">Time of the onset of symptoms is unknown</string>
+    <string name="radio_candidate_reason_ic_bleeding">Patient has a previous history of IC bleeding or stroke</string>
+    <string name="radio_candidate_reason_major_bleeding">Patient has had a major bleeding within 1 month</string>
+    <string name="radio_candidate_reason_uncontrol_bleeding">Patient has increased risk for uncontrollable bleeding</string>
+    <string name="radio_candidate_reason_hellp">Patient is pregnant with HELLP</string>
+    <string name="radio_candidate_reason_terminal_ill">Patient is terminally ill</string>
+    <string name="radio_candidate_reason_not_stroke">Patient\'s problem is most likely not caused by stroke</string>
+    <string name="radio_candidate_reason_heparin">Within 48 hours treatment dose of heparin, LMWH, dabigatran, apiksaban or rivaroksaban</string>
+    <string name="radio_candidate_reason_myocardial">Patient has had a myocartdial infarction within 3 months</string>
+    <!-- Symptoms -->
+    <string name="radio_left">sin</string>
+	<string name="radio_right">dx</string>
+	<string name="radio_both">l.a.</string>
+	<string name="radio_main_suspicion">Main suspicion</string>
+	<string name="radio_less_probable">Less probable</string>
+	<!-- Process -->
+	<string name="radio_interrupt_process_1">Patient and/or relatives refused from thrombolysis</string>
+	<string name="radio_interrupt_process_2">Deterioration of general condition</string>
+	<string name="radio_interrupt_process_3">Patient died</string>
+	<string name="radio_interrupt_process_4">Any contraindications found so far</string>
+	<string name="radio_interrupt_process_5">Other than stroke</string>
+	<string name="radio_interrupt_process_other_1">Seizures</string>
+	<string name="radio_interrupt_process_other_2">Migraine</string>
+	<string name="radio_interrupt_process_other_3">Hypertensive encephalopathy</string>
+	<string name="radio_interrupt_process_other_4">Wernicke\'s encephalopathy</string>
+	<string name="radio_interrupt_process_other_5">Drug toxicity</string>
+	<string name="radio_interrupt_process_other_6">Psychogenic</string>
+	<string name="radio_interrupt_process_other_7">Generalized ischaemia like syncope</string>
+	<!-- NIHSS -->
+    <string name="radio_1a_0">0.Alert</string>
+    <string name="radio_1a_1">1.Arousable by minor stimulation</string>
+    <string name="radio_1a_2">2.Requires repeated, strong or painful stimulation</string>
+    <string name="radio_1a_3">3.Response with reflex or totally unresponsive</string>
+     <string name="radio_1b_0">0.Both correctly</string>
+    <string name="radio_1b_1">1.One correctly</string>
+    <string name="radio_1b_2">2.Neither correctly</string>
+    <string name="radio_1c_0">0.Both correctly</string>
+    <string name="radio_1c_1">1.One correctly</string>
+    <string name="radio_1c_2">2.Neither correctly</string>
+    <string name="radio_2_0">0.Normal</string>
+    <string name="radio_2_1">1.Partial gaze palsy</string>
+    <string name="radio_2_2">2.Forced deviation or total gaze paresis</string>
+    <string name="radio_3_0">0.No visual loss</string>
+    <string name="radio_3_1">1.Partial hemianopia</string>
+    <string name="radio_3_2">2.Complete hemianopia</string>
+    <string name="radio_3_3">3.Bilateral hemianopia or blind</string>
+    <string name="radio_4_0">0.Normal, symmetrical movements</string>
+    <string name="radio_4_1">1.Minor paralysis</string>
+    <string name="radio_4_2">2.Partial paralysis</string>
+    <string name="radio_4_3">3.Complete paralysis</string>
+    <string name="radio_5_0">0.No drift</string>
+    <string name="radio_5_1">1.Drift before 10 seconds</string>
+    <string name="radio_5_2">2.Some effort against gravity</string>
+    <string name="radio_5_3">3.No effort against gravity</string>
+    <string name="radio_5_4">4.No movement</string>
+    <string name="radio_5_un">UN.Amputation or joint fusion</string>
+    <string name="radio_6_1">1.Drift before 5 seconds</string>
+    <string name="radio_7_0">0.Absent</string>
+    <string name="radio_7_1">1.Present in one limb</string>
+    <string name="radio_7_2">2.Present in two limbs</string>
+    <string name="radio_8_0">0.Normal, no sensory loss</string>
+    <string name="radio_8_1">1.Mild to moderate sensory loss</string>
+    <string name="radio_8_2">2.Severe or total sensory loss</string>
+    <string name="radio_9_0">0.No aphasia</string>
+    <string name="radio_9_1">1.Mild to moderate aphasia</string>
+    <string name="radio_9_2">2.Severe aphasia</string>
+    <string name="radio_9_3">3.Mute, global aphasia</string>
+    <string name="radio_10_0">0.Normal</string>
+    <string name="radio_10_1">1.Mild to moderate dysarthria</string>
+    <string name="radio_10_2">2.Severe dysarthria</string>
+    <string name="radio_10_un">UN.Intubated or physical barrier</string>
+    <string name="radio_11_0">0.No abnormality</string>
+    <string name="radio_11_1">1.Visuall, tactile, auditory, spatial or personal inattention or extinction</string>
+    <string name="radio_11_2">2.Profound hemi-inattention or extinction to more than one modality</string>
+    <!-- Lab -->
+	<string name="radio_modified_rankin_scale_0">0.Cares for self, no symptoms</string>
+	<string name="radio_modified_rankin_scale_1">1.Cares for self, some symptoms disability</string>
+	<string name="radio_modified_rankin_scale_2">2.Cares for self, but unable to carry out all previous activities</string>
+	<string name="radio_modified_rankin_scale_3">3.Requires some help</string>
+	<string name="radio_modified_rankin_scale_4">4.Semi-severe disability, needs assistance to own bodily needs and unable to walk unassisted</string>
+	<string name="radio_modified_rankin_scale_5">5.Severe disability, requires constant nursing, bedridden</string>
+	<string name="radio_modified_rankin_scale_6">6.Dead</string>
+	<string name="radio_mrs6_yes">Yes, patient died. I will interrupt the process.</string>
+	<string name="radio_mrs6_no">No, patient is alive. I will correct my answer.</string>
+	<string name="radio_admission_ct_no_visible_sign">No visible signs of ischemia</string>
+	<string name="radio_admission_ct_hyper_sign">(Hyper)Dense cerebral artery sign</string>
+	<string name="radio_admission_ct_early_infarct_sign">Early infarct sign (visible signs of ischemia)</string>
+	<string name="radio_admission_ct_ischemia_less">Ischemia \u003C 1/3 hemisphere</string>
+	<string name="radio_admission_ct_ischemia_more">Ischemia \u003E 1/3 hemisphere</string>
+	<string name="radio_admission_ct_bleeding">Cerebral or intracranial bleeding</string>
+	<string name="radio_admission_ct_tumor">CNS tumour</string>
+	<string name="radio_admission_ct_abscess">CNS abscess</string>
+	<string name="radio_admission_ct_other">Other contraindicating finding</string>
+	<string name="radio_done_perfusion_ct_1">Perfusion deficiency</string>
+	<string name="radio_done_perfusion_ct_2">Signs of perfusion deficiency</string>
+	<string name="radio_done_perfusion_ct_3">No perfusion deficiency</string>
+	<string name="radio_done_ct_angiography_1">Basilar thrombosis</string>
+	<string name="radio_done_ct_angiography_2">Signs of basilar thrombosis</string>
+	<string name="radio_done_ct_angiography_3">Suspicion of thrombosis</string>
+	<string name="radio_done_ct_angiography_4">No signs of thrombosis</string>
+	<!-- Present Condition -->
+	<string name="radio_yes_relative">Yes, relative</string>
+	<string name="radio_hellp">HELLP</string>
+	<string name="radio_anticoagulant_treatment_heparin">Heparin or LMWH (low-molecular-weight heparin)</string>
+	<string name="radio_anticoagulant_treatment_dabigatran">Dabigatran (Pradaxa®)</string>
+	<string name="radio_anticoagulant_treatment_apiksaban">Apiksaban (Eliquis®) or rivaroksaban (Xarelto®)</string>
+	<string name="radio_other">Other</string>
+	<string name="radio_cardiovascular_infections_endocarditis">Suspicion of endocarditis</string>
+	<string name="radio_cardiovascular_infections_pericarditis">Suspicion of pericarditis</string>
+	<string name="radio_cardiovascular_infections_embolus">Suspicion of septic embolus</string>
+	<string name="radio_other_critical">Other contraindication</string>
+	<string name="radio_other_not_critical">Other, not critical</string>
+	<string name="radio_obstetric_contraindications_pregnancy">First trimester of pregnancy</string>
+	<string name="radio_obstetric_contraindications_placenta">Placenta previa</string>
+	<string name="radio_other_relative_critical">Other, relatively critical</string>
+	<!-- Anamnesis -->
+	<string name="radio_cerebrovascular_incidents_1">Previous spontaneous SAH (SAV), unless aneurysm has been treated</string>
+	<string name="radio_cerebrovascular_incidents_2">Previous spontaneous intracranial hemorrhage</string>
+	<string name="radio_cerebrovascular_incidents_3">Major stroke \u003C 3 months ago</string>
+	<string name="radio_cerebrovascular_incidents_4">Significant head trauma \u003C 1 month ago</string>
+	<string name="radio_cerebrovascular_incidents_5">Minor stroke \u003C 1 month ago</string>
+	<string name="radio_disease_bleeding_tendency_1">Severe hepatopathy</string>
+	<string name="radio_disease_bleeding_tendency_2">Hemorrhagic retinopathy</string>
+	<string name="radio_disease_bleeding_tendency_3">Acute pancreatitis</string>
+	<string name="radio_disease_bleeding_tendency_4">Tumour and/or metastasis with risk for bleeding</string>
+	<string name="radio_significant_bleeding_1">Severe trauma within 1 month</string>
+	<string name="radio_significant_bleeding_2">Other severe or dangerous bleeding within 1 month</string>
+	<string name="radio_significant_bleeding_3">Active ulcus within 1 month</string>
+	<string name="radio_significant_bleeding_4">Other severe or dangerous GI-bleedings within 1 month</string>
+	<string name="radio_significant_bleeding_5">Esophageal varices  within 1 month</string>
+	<string name="radio_significant_bleeding_6">Urinary tract hemorrhage</string>
+	<string name="radio_operation_1">Major surgical operation within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="radio_operation_2">Neurosurgical operation within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="radio_operation_3">Opthalmological operation  within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="radio_operation_4">Punction of a great vessel without the possibility to use  tourniquet within 10 days</string>
+	<string name="radio_operation_5">Traumatic external cardiac massage within 10 days</string>
+	<string name="radio_operation_6">Parturition within 10 days</string>
+	<string name="radio_vessel_conditions_1">Severe microangiopathy</string>
+	<string name="radio_vessel_conditions_2">Suspicion of AVM (arteriovenous malformation)</string>
+	<string name="radio_vessel_conditions_3">Suspicion of aneurysm</string>
+	<string name="radio_vessel_conditions_4">Suspicion of other blood vessel anomaly with great hemorrhage risk</string>
+	
+	<!-- Thrombolysis -->
+	<string name="radio_rr_follow_type_1">185/110 mmHg</string>
+	<string name="radio_rr_follow_type_2">160/100 mmHg</string>
+	<string name="radio_interrupt_treat_1">Deterioration of general condition</string>
+	<string name="radio_interrupt_treat_2">Severe bleeding</string>
+	<string name="radio_interrupt_treat_3">Allergetic reaction</string>
+	<string name="radio_interrupt_treat_4">Failure of the infusion</string>
+	<string name="radio_interrupt_treat_5">APTT \u003E 60 s</string>
+	<string name="radio_interrupt_treat_6">B-Trom \u003C 100</string>
+	<string name="radio_interrupt_treat_7">Uncontrollable blood pressure</string>
+	<string name="radio_other_what">Other, what?</string>
+	<string name="radio_finish_follow_up_1">Follow-up is ready</string>
+	<string name="radio_direct_thrombo_reason_1">Data will be added later</string>
+
+    
+    <!-- ImageButton -->
+    <string name="imgbtn_done">Done</string>
+    <!-- Help Info Dialog -->
+    <string name="imgbtn_back">Back</string>
+    <!-- Progress Bar -->
+    <string name="light_door">At door</string>
+    <string name="light_ct_begin">CT begin</string>
+    <string name="light_ct_statements">CT statements</string>
+    <string name="light_thrombolysis_decision">Decision</string>
+    <string name="light_thrombolysis_bolus">Bolus</string>
+    <string name="light_thrombolysis_infusion_begin">Infusion begin</string>
+    <string name="light_thrombolysis_infusion_end">Infusion end</string>
+    <string name="light_end_follow_up">End follow-up</string>
+    <!-- Log in -->
+    <string name="title_log_in">Log in:</string>
+	<string name="imgbtn_login">Login</string>
+	<string name="imgbtn_cancel">Cancel</string>
+	<string name="imgbtn_save">Save</string>
+	<!-- Date of birth and onset time -->
+	<string name="imgbtn_edit">Edit</string>
+	<!-- fi.etla.strokehelper.patient info -->
+	<string name="imgbtn_new_patient">New patient</string>
+	<string name="imgbtn_interr_process">Interrupt process</string>
+	<!-- Symptoms -->
+	<string name="imgbtn_help_convulsion">Convulsion</string>
+	<string name="imgbtn_help_anticoagulant">Anticoagulant</string>
+	<string name="imgbtn_help_basilaris">Basilaris</string>
+	<string name="imgbtn_help_mild_symptoms">Mild symptoms</string>
+	<!-- Door -->
+	<string name="imgbtn_patient_at_door">Patient at door</string>
+	<!-- NIHSS -->
+	<string name="imgbtn_start_test">Start NIHSS test!</string>
+	<string name="imgbtn_check_test">Review NIHSS test</string>
+	<string name="imgbtn_finish">Finish NIHSS</string>
+	<!-- Lab -->
+	<string name="imgbtn_help_rr">RR</string>
+	<string name="imgbtn_help_modified_rankin_scale">Modified Rankin Scale</string>
+	<string name="imgbtn_help_quick_inr">Quick INR</string>
+	<string name="imgbtn_help_aptt">APTT</string>
+	<string name="imgbtn_help_p_trombai">P-Trombai</string>
+	<string name="imgbtn_help_b_trom">B-Trom</string>
+	<string name="imgbtn_help_b_gluc">B-gluc</string>
+	<string name="imgbtn_help_b_gluc_after">B-gluc after</string>
+	<!-- Anamnesis -->
+	<string name="imgbtn_help_cerebrovascular_incidents">Cerebrovascular incidents</string>
+	<string name="imgbtn_help_disease_bleeding_tendency">Diseases increasing tendency for bleeding</string>
+	<string name="imgbtn_help_significant_bleeding">Significant bleeding</string>
+	<string name="imgbtn_help_operation">Elevating operation</string>
+	<string name="imgbtn_help_blood_vessel_conditions">Blood vessel conditions</string>
+	<!-- Present Condition -->
+	<string name="imgbtn_help_obstetric_contraindications">Obstetric contraindications</string>
+	<string name="imgbtn_help_cardiovascular_infections">Suspicion of cardiovascular infections</string>
+	<!-- Thrombolysis -->
+	<string name="imgbtn_direct_thrombolysis">Go directly to thrombolysis</string>
+	<string name="imgbtn_show_contras">Details</string>
+	<string name="imgbtn_bolus_begin">Bolus start</string>
+	<string name="imgbtn_infusion_begin">Infusion begin</string>
+	<string name="imgbtn_infusion_end">Infusion end</string>
+	<string name="imgbtn_nihss_0h">0h</string>
+	<string name="imgbtn_nihss_1h">1h</string>
+	<string name="imgbtn_nihss_24h">24h</string>
+	<string name="imgbtn_help_rr_follow_type">RR follow type</string>
+	<string name="imgbtn_finish_follow_up">Finish follow-up</string>
+	<string name="imgbtn_interrupt">Interrupt treatment</string>
+	<string name="imgbtn_editing">Editing</string>
+	
+	<!-- Info -->
+	<!-- Action bar -->
+	<string name="info_select_patient">Select patient: </string>
+	<!-- log in -->
+	<string name="info_select_user">Select username:</string>
+	<string name="info_enter_user">Or enter username:</string>
+	<!-- Date of birth -->
+	<string name="info_birthday">Date of birth: </string>
+	<string name="info_onset_time">Symptom onset: </string>
+	<string name="info_last_symp_free_time">Last symptom-free: </string>
+	<string name="info_time_last_symp_free">Last symptom-free time: </string>
+	<!-- Patient info -->
+	<string name="info_patient_type_predoor">Predoor patient: </string>
+	<string name="info_patient_type_door">At door patient: </string>
+	<string name="info_patient_type_post_door">Post patient: </string>
+	<string name="info_patient_type_current">Current patient: </string>
+	<string name="info_patient_age">Patient age: </string>
+	<!-- Symptoms -->
+	<string name="info_symptom_side">Symptom side: </string>
+	<string name="info_symptom_basilaris">Basilaris symptoms: </string>
+	<string name="info_symptom_care_for_self">Cares for self: </string>
+	<string name="info_symptom_facial_palsy">Facial palsy symptoms: </string>
+	<string name="info_symptom_limb">Limb symptoms: </string>
+	<string name="info_symptom_convulsion">Convulsions: </string>
+	<string name="info_symptom_speech_disorder">Speech disorder: </string>
+	<string name="info_symptom_selfcare">Cares for self: </string>
+	<string name="info_symptom_terminal_disease">Terminal diseases: </string>
+	<string name="info_symptom_anticoagulant">Anticoagulant: </string>
+	<string name="info_symptom_thrombolysis_candidate">Throbolysis candidate: </string>
+	<string name="info_symptom_estimate_arrival_time">Estimated arrival time: </string>
+	<string name="info_symptom_quick_recover_symptoms">Quick recover symptoms: </string>
+	<string name="info_symptom_mild_symptoms">Mild symptoms: </string>
+	<string name="info_symptom_suggest_sav">Symptoms suggest SAV: </string>
+	<!-- Door -->
+	<string name="info_door_already_at_door">Patient arrived at door at: </string>
+	<string name="info_door_already_post_door">Patient arrived at door before: </string>
+	<!-- NIHSS -->
+	<string name="info_nihss_point">Scores</string>
+	<string name="info_nihss_answer">Answer</string>
+	<string name="info_nihss_total_point">NIHSS baseline total score:</string>
+	<string name="info_nihss_empty">-</string>
+	<string name="info_nihss_no_baseling_test">You have not done NIHSS test</string>
+	<string name="info_nihss_has_baseling_test">You have done NIHSS test at</string>
+	<!-- Lab -->
+	<string name="info_status_measurements">Status measurements</string>
+	<string name="info_imaging">Imaging</string>
+	<string name="info_laboratory_results">Laboratory results</string>
+	<string name="info_lab_rr">RR:</string>
+	<string name="info_lab_rr_systolic">Systolic:</string>
+	<string name="info_lab_rr_diastolic">Diastolic:</string>
+	<string name="info_lab_rr_separator">/</string>
+	<string name="info_lab_rr_unit">mmHg</string>
+	<string name="info_lab_rr_after_treat">RR after treatment of hypertension:</string>
+	<string name="info_lab_modified_rankin_scale">Pre-symptom Modified Rankin Scale:</string>
+	<string name="info_lab_admission_ct">Admission CT:</string>
+	<string name="info_lab_perfusion_ct">Perfusion CT:</string>
+	<string name="info_lab_ct_angiography">CT-angiography:</string>
+	<string name="info_lab_recommend">(Recommended)</string>
+	<string name="info_lab_ct_done">Done</string>
+	<string name="info_lab_ct_not_done">Not Done</string>
+	<string name="info_lab_done_persusion_ct">You decided to make perfusion CT. What did you find? (Choose item from the list below)</string>
+	<string name="info_lab_done_ct_angiography">You decided to make CT angiography. What did you find? (Choose item from the list below)</string>
+	<string name="info_lab_not_done_persusion_ct">You have chosen not to do perfusion CT even though it is recommended based on your earlier findings. Why?</string>
+	<string name="info_lab_not_done_ct_angiography">You have chosen not to do CT angiography even though it is recommended based on your earlier findings. Why?</string>
+	<string name="info_lab_quick_inr">Quick thromboplastin time (quick INR):</string>
+	<string name="info_lab_inr">Thromboplastin time INR:</string>
+	<string name="info_lab_aptt">APTT:</string>
+	<string name="info_lab_p_trombai">P-Trombai:</string>
+	<string name="info_lab_b_trom">B-Trom:</string>
+	<string name="info_lab_b_gluc">B-gluc:</string>
+	<string name="info_lab_b_gluc_after">B-gluc after blood sugar balancing:</string>
+	<!-- Anamnesis -->
+	<string name="info_anamnesis_cerebrovascular_incidents">Prior cerebrovascular incidents (bleedings, stroke, trauma)</string>
+	<string name="info_anamnesis_disease_bleeding_tendency">History of diseases increasing tendency for bleeding</string>
+	<string name="info_anamnesis_significant_bleeding">History of significant bleeding/risk within 1 month</string>
+	<string name="info_anamnesis_operation">History of bleeding-risk elevating operation (in 10-30 days)</string>
+	<string name="info_anamnesis_blood_vessel_conditions">History of blood vessel conditions</string>
+	<string name="info_anamnesis_acute_myocardial_infarction">History of acute myocardial infarction within 3 months</string>
+	<!-- Present Condition -->
+	<string name="info_present_active_bleeding">Active bleeding or acute bleeding tendency</string>
+	<string name="info_present_cardiovascular_infections">Suspicion of cardiovascular infections</string>
+	<string name="info_present_obstetric_contraindications">Obstetric contraindications</string>
+	<string name="info_other_present_condition">Other present critical condition</string>
+	<string name="question_anticoagulant_treatment">Does patient use:</string>
+	<string name="question_heparin">Has patient received a treatment dose of heparin or LMWH during last 48 hours?</string>
+	<string name="question_apiksaban">Has patient received a treatment dose of apiksaban (Eliquis®)  or rivaroksaban (Xarelto®) during last 48 hours?</string>
+	<string name="question_dabigatran">Has patient received a treatment dose of dabigatran (Pradaxa®) during last 48 hours?</string>
+	<string name="question_cardiovascular_infections">Specify cardiovascular infection or dissection. (Choose item(s) from the list)</string>
+	<string name="question_obstetric_contraindications">Specify the obstetric situation. (Choose item(s) from the list below)</string>
+	<!-- Anamnesis -->
+	<string name="question_specify_cerebrovascular_incidents">Which cerebrovascular incident(s) has patient had? (Choose item(s) from the list below)</string>
+	<string name="question_specify_disease_bleeding_tendency">What kind of bleeding tendency increasing disease(s) does patient have? (Choose item(s) from list below)</string>
+	<string name="question_specify_significant_bleeding">Which bleeding or risk for bleeding has patient had? (Choose item(s) from the list)</string>
+	<string name="question_specify_operation">Which bleeding risk elevating operation has patient had within 10-30 days? (Choose item(s) from the list below)</string>
+	<string name="question_specify_vessel_conditions">What kind of a blood vessel condition does patient have? (choose item(s) from list below)</string>
+	<!-- Thrombolysis -->
+	<string name="info_thrombolysis_not_yet">You have not yet answered all questions.\nPlease check summary, which answers are missing.</string>
+	<string name="info_direct_thrombolysis">You decided to start thrombolysis despite uncompleted data, why?</string>
+	<string name="info_thrombolysis_override_decision_rule">Do you want to override decision rules?</string>
+	<string name="info_thrombolysis_decision">Thrombolysis decision</string>
+	<string name="info_thrombolysis_decision_not_yet">You have not made thrombolysis decision</string>
+	<string name="info_thrombolysis_decision_yes">You have decided to give thrombolysis at</string>
+	<string name="info_thrombolysis_decision_no">You have decided not to give thrombolysis at</string>
+	<string name="info_general">General</string>
+	<string name="info_patient">Patient</string>
+	<string name="info_finding_support_thrombolysis">Findings allowing thrombolysis</string>
+	<string name="info_decision">Decision</string>
+	<string name="info_thrombolysis_patient_age"> years old patient with following symptoms:</string>
+	<string name="info_thrombolysis_timer">Time from symptom onset: </string>
+	
+	<string name="info_indications">Indications</string>
+	<string name="info_indications_critical">Critical</string>
+	<string name="info_indications_supportive">Supportive</string>
+	<string name="info_contraindications">Contraindications</string>
+	<string name="info_contraindications_relative">Relative contraindications</string>
+	<string name="info_contraindications_none">No contraindication</string>
+	<string name="question_thrombolysis_decision">Based on the symptoms, signs and findigns, will you give thrombolysis to this patient?</string>
+	<string name="info_rational_interrupt_none">So far no reasons that interrupt the process</string>
+	<string name="info_interrupt_process_none">So far no interruption in the process</string>
+	
+	<string name="info_rational_continue_process">Rationale to continue process despite contrary recommendation</string>
+	
+	<string name="info_contraindications_1">Symptom onset time is unknown</string>
+	<string name="info_contraindications_2">Over 4,5 hours has gone from the onset of symptoms</string>
+	<string name="info_contraindications_3">Patient is hypertensive (hypertension chosen not to be treated)</string>
+	<string name="info_contraindications_4">Patient is hypertensive despite of treatment</string>
+	<string name="info_contraindications_5">Patient is severely disabled</string>
+	<string name="info_contraindications_6">Patient is dead</string>
+	<string name="info_contraindications_7">ischemia \u003E 1/3 hemisphere in admission CT</string>
+	<string name="info_contraindications_8">Cerebral or intracranial bleeding in admission CT</string>
+	<string name="info_contraindications_9">CNS tumour in admission CT</string>
+	<string name="info_contraindications_10">CNS abscess in admission CT</string>
+	<string name="info_contraindications_11">Other contraindicating finding in admission CT</string>
+	<string name="info_contraindications_12">Symptoms suggesting SAV, when CT is normal</string>
+	<string name="info_contraindications_13">Quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in CT (native, perfusion, angiography)</string>
+	<string name="info_contraindications_14">Mild stroke symptoms without strong suspicion of a significant thrombosis in CT (native, perfusion, angiography)</string>
+	<string name="info_contraindications_15">Quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="info_contraindications_16">Mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="info_contraindications_17">Quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="info_contraindications_18">Mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="info_contraindications_19">Quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="info_contraindications_20">Mild stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="info_contraindications_21">Quick INR \u003E 1,7</string>
+	<string name="info_contraindications_22">INR \u003E 1,7</string>
+	<string name="info_contraindications_23">APTT \u003E 60 s</string>
+	<string name="info_contraindications_24">APTT exceeds normal values</string>
+	<string name="info_contraindications_25">P-Trombai exceeds normal values</string>
+	<string name="info_contraindications_26">B-Trom \u003C 100</string>
+	<string name="info_contraindications_27">Hypoglycemia not treated</string>
+	<string name="info_contraindications_28">The sysmptoms of patient disappeared after treatment of hypoglycemia</string>
+	<string name="info_contraindications_29">Hypoglycemia though tried to treat hypoglycemia</string>
+	<string name="info_contraindications_30">Hyperglycemia. Remember to treat hyperglycemia too</string>
+	<string name="info_contraindications_31">Active bleeding or acute bleeding tendency</string>
+	<string name="info_contraindications_32">A treatment dose of heparin or LMWH within last 48 hours</string>
+	<string name="info_contraindications_33">Treatment dose of dabigatran (Pradaxa®) within last 48 hours</string>
+	<string name="info_contraindications_34">Use of dabigatran with  APTT exceeding its normal values</string>
+	<string name="info_contraindications_35">Use of dabigatran with P-Trombai exceeding its normal values</string>
+	<string name="info_contraindications_36">A treatment dose of apiksaban (Eliquis®) or rivaroksaban (Xarelto®) within last 48 hours</string>
+	<string name="info_contraindications_37">Suspicion of endocarditis</string>
+	<string name="info_contraindications_38">Suspicion of pericarditis</string>
+	<string name="info_contraindications_39">Suspicion of septic embolus</string>
+	<string name="info_contraindications_40">Suspicion of other critical cardiovascular infection</string>
+	<string name="info_contraindications_41">HELLP (Hemolysis, Elevated Liver enzymes and Low Platelets) syndrome</string>
+	<string name="info_contraindications_42">Terminal illness</string>
+	<string name="info_contraindications_43">Other present critical condition</string>
+	<string name="info_contraindications_44">Previous spontaneous intracranial hemorrhage</string>
+	<string name="info_contraindications_45">Previous spontaneous SAH (SAV), unless aneurysm has been treated</string>
+	<string name="info_contraindications_46">Wide stroke \u003C 3 months ago</string>
+	<string name="info_contraindications_47">Minor stroke \u003C 1 month ago</string>
+	<string name="info_contraindications_48">Significant head trauma \u003C 1 month ago</string>
+	<string name="info_contraindications_49">Other critical cerebrovascular incident</string>
+	<string name="info_contraindications_50">Severe hepatopathy</string>
+	<string name="info_contraindications_51">Hemorrhagic retinopathy</string>
+	<string name="info_contraindications_52">Acute pancreatitis</string>
+	<string name="info_contraindications_53">Tumour and/or metastasis with risk for bleeding</string>
+	<string name="info_contraindications_54">Other, critical disease increasing risk for bleeding</string>
+	<string name="info_contraindications_55">Severe trauma within 1 month</string>
+	<string name="info_contraindications_56">Active ulcus within 1 month</string>
+	<string name="info_contraindications_57">Esophageal varices  within 1 month</string>
+	<string name="info_contraindications_58">Other severe or dangerous GI-bleedings within 1 month</string>
+	<string name="info_contraindications_59">Other severe or dangerous bleeding within 1 month</string>
+	<string name="info_contraindications_60">Major surgical operation within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="info_contraindications_61">Neurosurgical operation within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="info_contraindications_62">Opthalmological operation  within 14 days (AHA) or 1 month (HUCH)</string>
+	<string name="info_contraindications_63">Parturition within 10 days</string>
+	<string name="info_contraindications_64">Punction of a great vessel without the possibility to use  tourniquet (for example v.subclavia tai v.jugularis) within 10 days</string>
+	<string name="info_contraindications_65">Traumatic external cardiac massage within 10 days</string>
+	<string name="info_contraindications_66">Other critical bleeding risk elevating operation</string>
+	<string name="info_contraindications_67">Severe microangiopathy</string>
+	<string name="info_contraindications_68">Suspicion of AVM (arteriovenous malformation)</string>
+	<string name="info_contraindications_69">Suspicion of aneurysm</string>
+	<string name="info_contraindications_70">Suspicion of other blood vessel anomaly with great haemorrhage risk</string>
+	<string name="info_contraindications_71">Other. critical blood vessel condition</string>
+	
+	<string name="info_contrain_relative_1">Initial convulsions</string>
+	<string name="info_contrain_relative_2">Quickly recovering stroke symptoms</string>
+	<string name="info_contrain_relative_3">Symptoms suggesting SAV</string>
+	<string name="info_contrain_relative_4">Mild stroke symptoms</string>
+	<string name="info_contrain_relative_5">NIHSS \u003C 3</string>
+	<string name="info_contrain_relative_6">NIHSS \u003E 25 (over 3 hours from the onset of symptoms)</string>
+	<string name="info_contrain_relative_7">Patient is not able to take care for self </string>
+	<string name="info_contrain_relative_8">Requires some help</string>
+	<string name="info_contrain_relative_9">Semi-severe disability, needs assistance to own bodily needs and unable to walk unassisted</string>
+	<string name="info_contrain_relative_10">No perfusion deficiency</string>
+	<string name="info_contrain_relative_11">No signs of thrombosis</string>
+	<string name="info_contrain_relative_12">Quick INR is (1,5-1,7)</string>
+	<string name="info_contrain_relative_13">Hyperglycemia. Remember to treat hyperglycemia too</string>
+	<string name="info_contrain_relative_14">Patient uses heparin or LMWH</string>
+	<string name="info_contrain_relative_15">Patient uses dabigatran</string>
+	<string name="info_contrain_relative_16">Patenet uses apiksaban or rivaroksaban</string>
+	<string name="info_contrain_relative_17">Use of other anticoagulant than heparin, LMWH, dabigatran (Pradaxa®)  apiksaban (Eliquis®)  or rivaroksaban (Xarelto®)</string>
+	<string name="info_contrain_relative_18">First trimester of pregnancy</string>
+	<string name="info_contrain_relative_19">Placenta previa</string>
+	<string name="info_contrain_relative_20">Other, relatively critical obstetrical condition</string>
+	<string name="info_contrain_relative_21">Urinary tract hemorrhage</string>
+	<string name="info_contrain_relative_22">Acute myocardial infarction within 3 months</string>
+	
+	<string name="info_indication_1">NIHSS baseline total score at \u003C 3 hours:</string>
+	<string name="info_indication_2">NIHSS baseline total score at 3-4,5 hours:</string>
+	
+	<string name="info_alteplase_dose">Alteplase dose</string>
+	<string name="info_patient_weight">Patient weight: </string>
+	<string name="info_thrombolysis_bolus">Thrombolysis bolus: </string>
+	<string name="info_thrombolysis_bolus_time">Thrombolysis bolus is given at: </string>
+	<string name="info_thrombolysis_infusion">Thrombolysis infusion: </string>
+	<string name="info_thrombolysis_infusion_time_begin">Thrombolysis infusion is given at: </string>
+	<string name="info_thrombolysis_infusion_time_end">Thrombolysis infusion ended at: </string>
+	<string name="info_follow_up">Follow-up</string>
+	<string name="info_nihss">NIHSS</string>
+	<string name="info_blood_pressure">Blood pressure</string>
+	<string name="info_select_rr_follow_type">Chose follow-up level: </string>
+	<string name="info_rr_0min">RR (0 min): </string>
+	<string name="info_rr_15min">RR (15 min): </string>
+	<string name="info_rr_30min">RR (30 min): </string>
+	<string name="info_rr_1h">RR (1 hour): </string>
+	<string name="info_rr_2h">RR (2 hours): </string>
+	<string name="info_rr_24h">RR (24 hours): </string>
+	<string name="info_control_ct">Control CT at 24 hours: </string>
+	
+	<string name="title_confirm_not_candidate">Patient isn\'t thrombolysis candidate. Why?</string>
+	<string name="title_confirm_interrupt_process">You are about to interrupt the process, are you sure?</string>
+	<string name="title_confirm_interrupt_treat">You are interrupting thrombolysis, are you sure?</string>
+	<string name="title_interrupt_process_why">You are interrupting the process. Why?</string>
+	<string name="title_interrupt_treat_why">You have chosen to interrupt thrombolysis. Why?</string>
+	<string name="title_confirm_to_finish_follow_up">You are finishing the follow up, are you sure?</string>
+	<string name="title_finish_why">Why are you ending the follow-up?</string>
+	<string name="title_confirm_direct_thrombolysis">Data uncompleted, still make thromboysis?</string>
+	<string name="title_process_continue">Rationale to continue process:</string>
+	<string name="title_process_interrupt">Interruption of process:</string>
+	<string name="title_editing_timestamps">Editing timestamps:</string>
+	<string name="title_editing_birthday">Editing date of birth:</string>
+	
+	<string name="title_confirm_thrombolysis_decision_yes">You have decided to give thrombolysis</string>
+	<string name="title_confirm_thrombolysis_decision_no">You have decided not to give thrombolysis</string>
+	<string name="info_confirm_thrombolysis_decision">Are you sure?</string>
+	<string name="info_none">None</string>
+	
+	<!-- Summary -->
+	<string name="info_summary_title_general">General description of the patient</string>
+	<string name="info_summary_symptom_start">Symptoms started: </string>
+	<string name="info_summary_patient_id">Patient ID: </string>
+	<string name="info_summary_doctor_id">Doctor ID: </string>
+	<string name="info_summary_title_finding">Findings</string>
+	<string name="info_summary_title_measurement">Measurements</string>
+	<string name="info_summary_title_predicting_score">Predicting scores</string>
+	<string name="info_summary_title_laboratory_tests">Lab tests</string>
+	<string name="info_summary_sedan_score">SEDAN:</string>
+	<string name="info_summary_dragon_score">DRAGON:</string>
+	<string name="info_summary_title_anamnesis">Critical medical history</string>
+	<string name="info_summary_title_present_condition">Present critical conditions</string>
+	<string name="info_summary_title_rest_symptoms">Possible contraindicative symptoms</string>
+	<string name="info_summary_quick_recover_not_in_ct">Quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT</string>
+	<string name="info_summary_suggest_sav_nomal_ct">Symptoms suggesting SAV when CT is normal</string>
+	<string name="info_summary_mild_stroke_without_arterail_thrombosis">Mild stroke symptoms without evidence of a significant arterail thrombosis</string>
+	<string name="info_summary_sedan_1">Risk for sICH: 1-3,5 %</string>
+	<string name="info_summary_sedan_2">Risk for sICH: 5,1-12,2%</string>
+	<string name="info_summary_sedan_3">Risk for sICH: \u003E 16,8 %</string>
+	<string name="info_summary_dragon_1">Possibility to good outcome 96-74 % and to miserable outcome 0-5 %</string>
+	<string name="info_summary_dragon_2">Possibility to good outcome 1-73 % and to miserable outcome 5-70 %</string>
+	<string name="info_summary_dragon_3">Possibility to good outcome 0 % and to miserable outcome 70-100 %</string>
+	<string name="info_summary_interrupt_process">Interruption of process</string>
+	<string name="info_summary_title_thrombolysis">Thrombolysis</string>
+	<string name="info_summary_title_thrombolysis_treat">Thrombolysis treatment</string>
+	<string name="info_summary_nihss_0">NIHSS 0 hour:</string>
+	<string name="info_summary_nihss_1">NIHSS 1 hour:</string>
+	<string name="info_summary_nihss_24">NIHSS 24 hour:</string>
+	<string name="info_summary_rr_follow_up_level">RR follow-up level:</string>
+	<string name="info_summary_title_thrombolysis_interruption">Interruption of thrombolysis</string>
+	<string name="info_summary_title_end_follow_up">End of the follow up</string>
+	<string name="info_summary_interrupt_time">Time of interruption:</string>
+	<string name="info_summary_interrupt_reason">Interrupted due to:</string>
+	<string name="info_summary_end_time">Time of end follow-up:</string>
+	<string name="info_summary_end_reason">The follow-up was ended due to:</string>
+	
+	<!-- NIHSS -->
+	<string name="nihss_question_1a">1a. Level of consciousness (LOC)</string>
+	<string name="nihss_question_1b">1b. LOC questions (answers to 2 questions)</string>
+	<string name="nihss_question_1c">1c. LOC commands (responds to 2 commands)</string>
+	<string name="nihss_question_2">2. Best gaze (horizontal eye movements)</string>
+	<string name="nihss_question_3">3. Visual fields (upper and lower visual fields)</string>
+	<string name="nihss_question_4">4. Facial palsy</string>
+	<string name="nihss_question_5">5a. &amp; 5b. Motor arm (holds arm in 90 (45) degrees for 10s)</string>
+	<string name="nihss_question_5a">5a. Motor arm right (holds arm in 90 (45) degrees for 10s)</string>
+	<string name="nihss_question_5b">5b. Motor arm left (holds arm in 90 (45) degrees for 10s)</string>
+	<string name="nihss_question_6">6a. &amp; 6b. Motor leg left (holds leg at 30 degrees for 5s)</string>
+	<string name="nihss_question_6a">6a. Motor leg right (holds leg at 30 degrees for 5s)</string>
+	<string name="nihss_question_6b">6b. Motor leg left (holds leg at 30 degrees for 5s)</string>
+	<string name="nihss_question_right">Right</string>
+	<string name="nihss_question_left">Left</string>
+	<string name="nihss_question_7">7. Limb ataxia (finger-nose and heel-shin on both sides)</string>
+	<string name="nihss_question_8">8. Sensory</string>
+	<string name="nihss_question_9">9. Best language</string>
+	<string name="nihss_question_10">10. Dysarthria</string>
+	<string name="nihss_question_11">11. Extinction and inattention (neglect)</string>
+	
+	<!-- Help Info -->
+	<string name="help_title_convulsion">Initial convulsions:</string>
+	<string name="help_title_basilaris">Basilaris thrombosis:</string>
+	<string name="help_title_anticoagulant">Anticoagulant medication:</string>
+	<string name="help_title_mild_symptoms">Mild symptoms:</string>
+	<string name="help_info_convulsion">If patient had initial convulsions and there is no evidence of significant arterial thrombosis, thrombolysis is contraindicated.</string>
+	<string name="help_info_basilaris">Extension type of stiffening, especially when level of consciousness is intact, is a basilaris thrombosis suspect until otherwise proven.\n
+Other symptoms and signs always suggesting basilaris thrombosis\n
+- disturbance of level of consciousness\n
+- brain stem symptoms (dysarthris, bulbar paresis, disturbamnces in eye movements)\n\n
+Symptoms and signs often related to basilaris thrombosis\n
+- bilateral or side shifting limb symptoms\n
+- bilateral positive Babinski sign\n
+- ataxia\n
+- vision disturbances\n\n
+If you are suspecting basilaris thrombosis, you need to take native CT AND angiography (either CT angiography or MRA angiograhpy).</string>
+	<string name="help_info_anticoagulant">Anticoagulant medication is a contraindication for thrombolysis, if\n
+- patient has had a treatment dose of heparin (if APTT over normal maximum) or LMWH within 48 hours\n
+- patients has taken dabigatran (Pradaxa®), apiksaban(Eliquis®) or rivaroksaban (Xarelto®) treatment within 48 hours\n
+- use of anticoagulants with INR \u003E 1,7 (for heparin and LMWH after 48 hours of last treatment dose)\n
+- after 48 hours of last treatment dose of dabigatran, if APTT ≥34 s or P-Trombai ≥26 s\n\n
+If normal values for thrombin time P-Trombai (17-25 s) or APTT (23-33 s) are exceed, patient may be using dabigatran.\n\n
+If patient uses dabigatran and thrombin time P-Trombai (17-25 s) or APTT (23-33 s) are normal, there is no dabigatran effect and thrombolysis may be given.</string>
+	<string name="help_info_mild_symptoms">"Symptoms are regarded as mild, if NIHSS 0-2 or only lower facialis paresis and dysarthria except when there is evidence of a sgnificant arterial thrombosis (dense media sign or other dense vessel in native CT)"</string>
+	
+	<string name="help_info_question_1a">The investigator must choose a response if a full evaluation is prevented by such obstacles as an endotracheal tube, language barrier, orotracheal trauma/bandages. A 3 is scored only if the patient makes no movement (other than reflexive posturing) in response to noxious stimulation.
+Scores:\n\n
+0. Alert; keenly responsive.\n
+1. Not alert; but arousable by minor stimulation to obey, answer, or respond.\n
+2. Not alert; requires repeated stimulation to attend, or is obtunded and requires strong or painful stimulation to make movements (not stereotyped).\n
+3. Responds only with reflex motor or autonomic effects, or totally unresponsive, flaccid, and areflexic.</string>
+	<string name="help_info_question_1b">The patient is asked the month and his/her age. The answer must be correct — there is no partial credit for being close. Aphasic and stuporous patients who do not comprehend the questions will score 2. Patients unable to speak because of endotracheal intubation, orotracheal trauma, severe dysarthria from any cause, language barrier, or any other problem not secondary to aphasia are given a 1. It is important that only the initial answer be graded and that the examiner not “help” the patient with verbal or non-verbal cues.
+Scores:\n\n
+0. Answers both questions correctly.\n
+1. Answers one question correctly.\n
+2. Answers neither question correctly.</string>
+	<string name="help_info_question_1c">The patient is asked to open and close the eyes and then to grip and release the non-paretic hand. Substitute another one-step command if the hands cannot be used. Credit is given if an unequivocal attempt is made but not completed due to weakness. If the patient does not respond to command, the task should be demonstrated to him or her (pantomime), and the result scored (i.e., follows none, one, or two commands). Patients with trauma, amputation, or other physical impediments should be given suitable one-step commands. Only the first attempt is scored.
+Scores:\n\n
+0. Performs both tasks correctly.\n
+1. Performs one task correctly.\n
+2. Performs neither task correctly.</string>
+	<string name="help_info_question_2">Only horizontal eye movements will be tested. Voluntary or reflexive (oculocephalic) eye movements will be scored, but caloric testing is not done. If the patient has a conjugate deviation of the eyes that can be overcome by voluntary or reflexive activity, the score will be 1. If a patient has an isolated peripheral nerve paresis (CN III, IV, or VI), score a 1. Gaze is testable in all aphasic patients. Patients with ocular trauma, bandages, pre-existing blindness, or other disorder of visual acuity or fields should be tested with reflexive movements, and a choice made by the investigator. Establishing eye contact and then moving about the patient from side to side will occasionally clarify the presence of a partial gaze palsy.
+Scores:\n\n
+0. Normal.\n
+1. Partial gaze palsy; gaze is abnormal in one or both eyes, but forced deviation or total gaze paresis is not present.\n
+2. Forced deviation, or total gaze paresis is not overcome by the oculocephalic maneuver.</string>
+	<string name="help_info_question_3">Visual fields (upper and lower quadrants) are tested by confrontation, using finger counting or visual threat, as appropriate. Patients may be encouraged, but if they look at the side of the moving fingers appropriately, this can be scored as normal. If there is unilateral blindness or enucleation, visual fields in the remaining eye are scored. Score 1 only if a clear-cut asymmetry, including quadrantanopia, is found. If patient is blind from any cause, score 3. Double simultaneous stimulation is performed at this point. If there is extinction, patient receives a 1, and the results are used to respond to item 11.
+Scores:\n\n
+0. No visual loss.\n
+1. Partial hemianopia.\n
+2. Complete hemianopia.\n
+3.Bilateral hemianopia (blind including cortical blindness).</string>
+	<string name="help_info_question_4">Ask — or use pantomime to encourage — the patient to show teeth or raise eyebrows and close eyes. Score symmetry of grimace in response to noxious stimuli in the poorly responsive or non-comprehending patient. If facial trauma/bandages, orotracheal tube, tape, or other physical barriers obscure the face, these should be removed to the extent possible.
+Scores:\n\n
+0. Normal symmetrical movements.\n
+1. Minor paralysis (flattened nasolabial fold, asymmetry on smiling).\n
+2. Partial paralysis (total or near-total paralysis of lower face).\n
+3. Complete paralysis of one or both sides (absence of facial movement in the upper and lower face).</string>
+	<string name="help_info_question_5">The limb is placed in the appropriate position: extend the arms (palms down) 90 degrees (if sitting) or 45 degrees (if supine). Drift is scored if the arm falls before 10 seconds. The aphasic patient is encouraged using urgency in the voice and pantomime, but not noxious stimulation. Each limb is tested in turn, beginning with the non-paretic arm. Only in the case of amputation or joint fusion at the shoulder, the examiner should record the score as untestable (UN) and clearly write the explanation for this choice.
+Scores:\n\n
+0. No drift; limb holds 90 (or 45) degrees for full 10 seconds.\n
+1. Drift; limb holds 90 (or 45) degrees, but drifts down before full 10 seconds; does not hit bed or other support.\n
+2. Some effort against gravity; limb cannot get to or maintain (if cued) 90 (or 45) degrees, drifts down to bed, but has some effort against gravity.\n
+3. No effort against gravity; limb falls.\n
+4. No movement.\n
+UN Amputation or joint fusion, explain:</string>
+	<string name="help_info_question_6">The limb is placed in the appropriate position: hold the leg at 30 degrees (always tested supine). Drift is scored if the leg falls before 5 seconds. The aphasic patient is encouraged using urgency in the voice and pantomime but not noxious stimulation. Each limb is tested in turn, beginning with the non-paretic leg. Only in the case of amputation or joint fusion at the hip, the examiner should record the score as untestable (UN) and clearly write the explanation for this choice.
+Scores:\n\n
+0. No drift; leg holds 30-degree position for full 5 seconds.\n
+1. Drift; leg falls by the end of the 5-second period but does not hit the bed.\n
+2. Some effort against gravity; leg falls to bed by 5 seconds but has some effort against gravity.\n
+3. No effort against gravity; leg falls to bed immediately.\n
+4. No movement.\n
+UN Amputation or joint fusion, explain:</string>
+	<string name="help_info_question_7">This item is aimed at finding evidence of a unilateral cerebellar lesion. Test with eyes open. In case of visual defect, ensure testing is done in intact visual field. The fingernose-finger and heel-shin tests are performed on both sides, and ataxia is scored only if present out of proportion to weakness. Ataxia is absent in the patient who cannot understand or is paralyzed. Only in the case of amputation or joint fusion, the examiner should record the score as untestable (UN) and clearly write the explanation for this choice. In case of blindness, test by having the patient touch nose from extended arm position.
+Score:\n\n
+0. Absent.\n
+1. Present in one limb.\n
+2. Present in two limbs.\n
+UN. Amputation or joint fusion, explain:</string>
+	<string name="help_info_question_8">Sensation or grimace to pinprick when tested, or withdrawal from noxious stimulus in the obtunded or aphasic patient. Only sensory loss attributed to stroke is scored as abnormal and the examiner should test as many body areas [arms (not hands), legs, trunk, face] as needed to accurately check for hemisensory loss. A score of 2, “severe or total sensory loss,” should only be given when a severe or total loss of sensation can be clearly demonstrated. Stuporous and aphasic patients will, therefore, probably score 1 or 0. The patient with brainstem stroke who has bilateral loss of sensation is scored 2. If the patient does not respond and is quadriplegic, score 2. Patients in a coma (item 1a=3) are automatically given a 2 on this item.
+Scores:\n\n
+0. Normal; no sensory loss.\n
+1. Mild-to-moderate sensory loss; patient feels pinprick is less sharp or is dull on the affected side; or there is a loss of superficial pain with pinprick, but patient is aware of being touched.\n
+2. Severe or total sensory loss; patient is not aware of being touched in the face, arm, and leg.</string>
+	<string name="help_info_question_9">A great deal of information about comprehension will be obtained during the preceding sections of the examination. For this scale item, the patient is asked to describe what is happening in the attached picture, to name the items on the attached naming sheet, and to read from the attached list of sentences. Comprehension is judged from responses here, as well as to all of the commands in the preceding general neurological exam. If visual loss interferes with the tests, ask the patient to identify objects placed in the hand, repeat, and produce speech. The intubated patient should be asked to write. The patient in a coma (item 1a=3) will automatically score 3 on this item. The examiner must choose a score for the patient with stupor or limited cooperation, but a score of 3 should be used only if the patient is mute and follows no one-step commands.
+Scores:\n\n
+0. No aphasia; normal.\n
+1. Mild-to-moderate aphasia; some obvious loss of fluency or facility of comprehension, without significant limitation on ideas expressed or form of expression. Reduction of speech and/or comprehension, however, makes conversation about provided materials difficult or impossible. For example, in conversation about provided materials, examiner can identify picture or naming card content from patient’s response.\n
+2. Severe aphasia; all communication is through fragmentary expression; great need for inference, questioning, and guessing by the listener. Range of information that can be exchanged is limited; listener carries burden of communication. Examiner cannot identify materials provided from patient response.\n
+3. Mute, global aphasia; no usable speech</string>
+	<string name="help_info_question_10">If patient is thought to be normal, an adequate sample of speech must be obtained by asking patient to read or repeat words from the attached list. If the patient has severe aphasia, the clarity of articulation of spontaneous speech can be rated. Only if the patient is intubated or has other physical barriers to producing speech, the examiner should record the score as untestable (UN) and clearly write the explanation for this choice. Do not tell the patient why he/she is being tested.
+Scores:\n\n
+0. Normal.\n
+1. Mild-to-moderate dysarthria; patient slurs at least some words and, at worst, can be understood with some difficulty.\n
+2. Severe dysarthria; patient’s speech is so slurred as to be unintelligible in the absence of or out of proportion to any dysphasia, or is mute/anarthric.\n
+UN. Intubated or other physical barrier, explain:</string>
+	<string name="help_info_question_11">Sufficient information to identify neglect may be obtained during the prior testing. If the patient has a severe visual loss preventing visual double simultaneous stimulation, and the cutaneous stimuli are normal, the score is normal. If the patient has aphasia but does appear to attend to both sides, the score is normal. The presence of visual spatial neglect or anosagnosia may also be taken as evidence of abnormality. Since the abnormality is scored only if present, the item is never untestable.
+Scores:\n\n
+0. No abnormality.\n
+1. Visual, tactile, auditory, spatial, or personal inattention, or extinction to bilateral simultaneous stimulation in one of the sensory modalities.\n
+2. Profound hemi-inattention or extinction to more than one modality; does not recognize own hand or orients to only one side of space.</string>
+
+	<string name="help_title_rr">Hypertension</string>
+	<string name="help_info_rr">Blood pressure values limiting thrombolysis:\n
+- systolic blood pressure \u003C 185 mmHg and diastolic \u003C 100 mmHg in general
+- systolic blood pressure \u003C 160 mmHg and diastolic \u003C 110 mmHg has to be considered as a limit, if patient SEDAN scores are 4-6 or recanalisation of vessels is documentated (for example during mechanical thrombectomy)\n
+If patient is hypertensive but reacts to treatment so that patient systolic and diastolic bloodpressure are below 185/110 mmHg (or in special cases 160/110 mmHg) after treatment, you may give thrombolysis. If treament does not work, patient has a contraindication for thrombolysis.\n
+Note that patient bloodpressure has to be kept undet 185/110 mmHg (or in special cases under 160/100 mmHg) during thrombolysis and the next 24 hours after thrombolysis.</string>
+	<string name="help_info_modify_rankin_scale">mRS-scoring:\n
+0. No symptoms.
+1. No significant disability. Able to carry out all usual activities, despite some symptoms.
+2. Slight disability. Able to look after own affairs without assistance, but unable to carry out all previous activities.
+3. Moderate disability. Requires some help, but able to walk unassisted.(yellow)
+4. Moderately severe disability. Unable to attend to own bodily needs without assistance, and unable to walk unassisted.(yellow)
+5. Severe disability. Requires constant nursing care and attention, bedridden, incontinent.
+6. Dead.</string>
+
+	<string name="help_info_quick_inr">if quick INR is 1,5-1,7, wait for the real P-INR before starting thrombolysis"</string>
+	<string name="help_info_aptt">APTT \u003E 60 s is a contraindication for thrombolysis. Nevertheless you don not have to wait APTT-result to start thrombolysis. If the result comes during thrombolysis and is \u003E 60 s, thrombolysis has to be interrupted.\n
+If APTT is 34-60 s, patient may use dabigatran (Pradaxa®). Confirm, if patient uses dabigatran and, if so, then confirm the time when patient took it last. Remember, that if a treatment dose of dabigatran is taken within 48 hours, thrombolysis is contraindicated.</string>
+	<string name="help_info_p_trombai">If P-Trombai ≥26 s, patient may use dabigatran (Pradaxa®). Confirm, if patient uses dabigatran and, if so, then confirm the time when patient took it last. Remember, that if a treatment dose of dabigatran is taken within 48 hours, thrombolysis is contraindicated.</string>
+	<string name="help_info_b_trom">B-Trom \u003C 100 is a contraindication for thrombolysis. Nevertheless you do not have to wait B-Trom-result to start thrombolysis. If the result comes during thrombolysis and is \u003C 100, thrombolysis has to be interrupted.</string>
+	<string name="help_info_b_gluc">If B-Gluc \u003C 2,8, treat patient normoglycemic. If symptoms persist, you may give thrombolysis. 
+If B-Gluc is \u003E 10 mmol/l, you can start thrombolysis, but you have to start treatment of hyperglycemia at the same time.</string>
+	<string name="help_info_b_gluc_after">if quick INR is 1,5-1,7, wait for the real P-INR before starting thrombolysis</string>
+	
+	<string name="help_info_cardiovascular">Suspicion of cardiovascular infections is a contraindication for thrombolysis due to enhanced risk of embolic bleeding. They include:\n\n
+- suspicion of endocarditis\n
+- suspicion of pericarditis\n
+- suspicion of septic embolus</string>
+	<string name="help_info_obstetri">Absolute obstetric contraindications include:\n
+- HELLP (Hemolysis, Elevated Liver enzymes and Low Platelets) syndrome\n\n
+Relative obstetric contraindications include:\n
+- first trimester of pregnancy\n
+- placenta previa\n\n
+If patient has either of these relative contraindications, you need especially strong arguments to give thrombolysis.</string>
+	
+	
+	<string name="help_info_cerebrovascular_incidents">Contraindicative cerebrovascular bleedings, stroke and trauma include:\n\n
+- previous spontaneous ICH\n
+- previous spontaneous non-traumatic SAH (SAV), unless aneurism has been treated\n
+- previous stroke: from wide stroke less than 3 months or from minor stroke less than 1 month\n
+- significant head trauma less than 1 month ago\n\n
+TIA is not contraindication and is marked as no.</string>
+	<string name="help_info_disease_bleeding_tendency">Diseases increasing tendency for bleeding contraindicating thrombolysis include:\n\n
+- severe hepatopathy\n
+- hemorrhagic retinopathy\n
+- acute pancreatitis\n
+- tumour and/or metastasis with risk for bleeding</string>
+	<string name="help_info_significant_bleeding">Contraindicating bleedings and risk for bleeding within 1 month include:\n\n
+- major surgical operation within 1 month\n
+- neurosurgical operation within 1 month\n
+- opthalmological operation  within 1 month\n
+- severe trauma within 1 month\n
+- active ulcus within 1 month\n
+- esophageal varices  within 1 month\n
+- other severe or dangerous GI-bleedings within 1 month\n
+- other severe or dangerous bleeding within 1 month\n
+- urinary tract hemorrhage (relative contraindication)</string>
+	<string name="help_info_operation">Contraindicationg bleeding risk elevating operation within 14 days include:\n\n
+- major surgical operation within 14 days (NB: AHA 14 d, HUSH 1 mth)\n
+- neurosurgical operation within 14 days (NB: AHA 14 d, HUSH 1 mth)\n
+- opthalmological operation  within 14 days (NB: AHA 14 d, HUSH 1 mth)\n
+- parturition within 10 days\n
+- punction of a great vessel without the possibility to use  tourniquet (for example v.subclavia tai v.jugularis) within 10 days\n
+- traumatic external cardiac massage within 10 days</string>
+	<string name="help_info_blood_vessel_conditions">Blood vessel problems contraindicating thrombolysis include:\n\n
+- severe microangiopathy\n
+- suspicion of blood vessel anomaly with great haemorrage risk (AVM or large aneurysm, other)</string>
+	<string name="help_title_rr_follow_up">Blood pressure follow-up level:</string>
+	<string name="help_info_rr_follow_up">Consider level 160/110 mmHg for patients, whose SEDAN scores are 4-6 or they have documentated recanalisation of blood vessels.</string>
+	<string name="recommend_title_ct">Recommendation for CTs:</string>
+	<string name="recommend_info_ct_basilari"> - Your main suspicion for patien\'s symptoms and signs is basilaris thrombosis. It is highly recommended to make both native CT and CT angiography.</string>
+	<string name="recommend_info_ct_quick_recover"> - Patient\'s stroke symptoms are recovering quickly. It is highly recommended to make a native CT together with CT perfusion-angiography package.</string>
+	<string name="recommend_info_ct_mild_symptom"> - Patient has mild stroke symptoms. It is highly recommended to make a native CT together with CT perfusion-angiography package.</string>
+	
+	<!-- Warning -->
+	<string name="warning_log_in_no_username">Please select username or enter a new username to login.</string>
+	<string name="warning_nihss_uncompleted">Please check, you have not finished the NIHSS test.</string>
+	<string name="warning_interrupt_no_reason">Have to choose at least one interruption reason.</string>
+	<string name="warning_interrupt_no_other">Please specify what is the other reason for interrupting.</string>
+	<string name="warning_finish_no_other">Please specify the reason for ending follow-up.</string>
+	<string name="warning_not_candidate_other">Please specify what is the other reason</string>
+	<string name="warning_finish_no_reason">Have to choose at least one reason to end follow-up.</string>
+	<string name="warning_direct_thrombo_no_reason">Have to choose at least one reason.</string>
+	<string name="warning_direct_thrombo_no_other">Please specify what is other reason.</string>
+	<string name="warning_not_present_other">Please specify what other contradiction does the patient have?</string>
+	
+	<!-- Toasts-->
+	<string name="toast_candidate_not">You decided that this patient is not a thrombolysis candidate.</string>
+	<string name="toast_interrupted">Thrombolysis treatment is interrupted.</string>
+	<string name="toast_begin_bolus">Please start the bolus</string>
+	<string name="toast_follow_up_finished">Follow-up is ended.</string>
+	<string name="toast_data_saved">Data is saved.</string>
+	<string name="toast_process_interrupted">Process is interrupted.</string>
+	<string name="toast_process_continue">Process will continue.</string>
+	<string name="toast_rr_treat">You decided to lower blood pressure.</string>
+	<string name="toast_mrs6_correct_answer">Please correct the answer.</string>
+	<string name="toast_b_gluc_treat">You decided to to treat patient normoglycemic.</string>
+	
+	<!-- Interruption Tag -->
+	<string name="interruption_warning_title">Contraindication warning:</string>
+	<string name="rr_hypertension_warning_title">Hypertension</string>
+	<string name="interruption_not_to">Not interrupted even though</string>
+	<string name="interruption_to_do">Interrupted because of</string>
+	<string name="b_gluc_hypoglycemic_warning_title">Hypoglycemic</string>
+	<string name="b_gluc_after_warning_title">B-Gluc after balanced hypoglycemia</string>
+	
+	<string name="info_interr_onset">Symptom onset time Is not known, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_rr">Patient is hypertensive, which contraindicating for thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_warning_rr">Patient is hypertensive. Will you try to lower blood pressure?</string>
+	<string name="info_interr_rr_after">Patient is hypertensive despite medication, which contraindicating thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_ter_illness">Patient is terminally ill, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_mrs_5">Patient is severely disabled, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_mrs6_confirm">You have chosen \"6. died\". Is this correct?</string>
+	<string name="info_interr_mrs_6">Patient is dead. Do you want to interrupt the process?</string>
+	<string name="info_interr_ct_quick">- Patient has quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT, perfusion CT and/or CT angiography</string>
+	<string name="info_interr_ct_mild">- Patient has mild stroke symptoms without strong suspicion of a significant thrombosis in native CT, perfusion CT and/or CT angiography</string>
+	<string name="info_interr_ct_angio_not_quick">- Patient has quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="info_interr_ct_angio_not_mild">- Patient has mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="info_interr_ct_perfu_not_quick">- Patient has quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="info_interr_ct_perfu_not_mild">- Patient has mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="info_interr_ct_angio_perfu_not_quick">- Patient has quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="info_interr_ct_angio_perfu_not_mild">- Patient has mild stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="info_interr_quick_inr">INR \u003E 1,7 contraindicating for thrombolysis. Do you want to interrupt the process? </string>
+	<string name="info_interr_inr">INR \u003E 1,7 contraindicating for thrombolysis. Do you want to interrupt the process? </string>
+	<string name="info_interr_aptt"> APTT \u003E 60s contraindicating for thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_b_trom"> B-Trom \u003C 100 contraindicating for thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_warning_b_gluc">Patient is hypoglycemic. Will you try to treat patient normoglycemic?</string>
+	<string name="info_interr_b_gluc">Patient is hypoglycemic. Do you want to interrupt the process without treating hypoglycemia?</string>
+	<string name="info_interr_b_gluc_after">Patient is still hypoglycemic, which contraindicating thrombolysis. Do you want to interrupt the process without treating hypoglycemia?</string>
+	<string name="info_warning_b_gluc_after">You have treated patient normoglycemic. Did symptoms disappear?</string>
+	<string name="info_interr_b_gluc_after_disappear">Patient\'s symptoms disappeared after treatment of hypoglycemia contraindicating thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_active_bleed">Patient has active bleeding, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_heparin">Patient has received a treatment dose of heparin or LMWH within last 48 hours, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_dabigatran">- Patient has received a treatment dose of dabigatran (Pradaxa®) within last 48 hours</string>
+	<string name="info_interr_dabigatran_aptt">- Patient uses dabigatran and APTT exceeds its normal values</string>
+	<string name="info_interr_dabigatran_p_trombai">- Patient uses dabigatran and P-Trombai exceeds its normal values</string>
+	<string name="info_interr_apiksaban">Patient has received a treatment dose of apiksaban (Eliquis®) or rivaroksaban (Xarelto®) within last 48 hours, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_hellp">Patient has HELLP (Hemolysis, Elevated Liver enzymes and Low Platelets) syndrome, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_cardiovascular">Patient has either cardiovascular infection, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_other_present_what">What other contradiction does the patient have? Enter contraindication: </string>
+	<string name="info_interr_other_present">Do you want to interrupt the process?</string>
+	<string name="info_interr_cerebrovascular">Patient had cerebrovascular incident(s), which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_disease">Patient has a disease increasing tendency for bleeding, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_bleeding">Patient has had a major bleeding or risk for bleeding within 1 month, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_operation">Patient has had a bleeding risk elevating operations within 14 days, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	<string name="info_interr_vessel">Patient has a blood vessel condition, which contraindicates thrombolysis. Do you want to interrupt the process?</string>
+	
+	<string name="reason_interr_onset"> symptom onset time is unknown</string>
+	<string name="reason_interr_rr"> patient is hypertensive, hypertension chosen not to be treated</string>
+	<string name="reason_interr_rr_after"> patient is hypertensive despite of treatment</string>
+	<string name="reason_interr_mRS_5"> patient is severely disabled</string>
+	<string name="reason_interr_mRS_6"> patient is dead</string>
+	<string name="reason_interr_ct_sav"> symptoms suggesting SAV when CT is normal</string>
+	<string name="reason_interr_ct_quick"> quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in CT (native, perfusion, angiography)</string>
+	<string name="reason_interr_ct_mild"> mild stroke symptoms without strong suspicion of a significant thrombosis in CT (native, perfusion, angiography)</string>
+	<string name="reason_interr_ct_angio_not_quick"> quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="reason_interr_ct_angio_not_mild"> mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and perfusion CT (CT angiography not done)</string>
+	<string name="reason_interr_ct_perfu_not_quick"> quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="reason_interr_ct_perfu_not_mild"> mild stroke symptoms without strong suspicion of a significant thrombosis in native CT and in CT angiography (perfusion CT not done)</string>
+	<string name="reason_interr_ct_angio_perfu_not_quick"> quickly recovering stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="reason_interr_ct_angio_perfu_not_mild"> mild stroke symptoms without strong suspicion of a significant thrombosis in native CT (perfusion CT and CT angiography not done)</string>
+	<string name="reason_interr_quick_inr"> quick INR \u003E 1,7</string>
+	<string name="reason_interr_inr"> INR \u003E 1,7</string>
+	<string name="reason_interr_aptt"> APTT \u003E 60s</string>
+	<string name="reason_interr_b_trom"> B-Trom \u003C 100</string>
+	<string name="reason_interr_bgluc"> hypoglycemia not treated</string>
+	<string name="reason_interr_bgluc_after_disappear"> patient symptoms disappeared after treatment of hypoglycemia</string>
+	<string name="reason_interr_bgluc_after"> hypoglycemia though tried to treat</string>
+	<string name="reason_interr_active_bleed"> active bleeding or acute bleeding tendency</string>
+	<string name="reason_interr_heparin"> a treatment dose of heparin or LMWH within last 48 hours</string>
+	<string name="reason_interr_dabigatran"> treatment dose of dabigatran (Pradaxa®) within last 48 hours</string>
+	<string name="reason_interr_dabi_aptt"> use of dabigatran with APTT exceeding its normal values</string>
+	<string name="reason_interr_dabi_p_trom"> use of dabigatran with P-Trombai exceeding its normal values</string>
+	<string name="reason_interr_apiksaban"> a treatment dose of apiksaban (Eliquis®) or rivaroksaban (Xarelto®) within last 48 hours</string>
+	<string name="reason_interr_hellp"> HELLP (Hemolysis, Elevated Liver enzymes and Low Platelets) syndrome</string>
+	<string name="reason_interr_ter_illness"> terminal illness</string>
+	<string name="reason_interr_present_other"> other present critical conditions</string>
+
+
+	<!-- Timestamps Editing Dialog-->
+	<string name="info_time_onset">Symptom onset time:</string>
+	<string name="info_time_estimate_arrival">Estimated arrival time:</string>
+	<string name="info_time_door">Time of patient at door:</string>
+	<string name="info_time_ct_begin">CT begin time:</string>
+	<string name="info_time_ct_end">CT end time:</string>
+	<string name="info_time_thrombo_decision">Thrombolysis decision time:</string>
+	<string name="info_time_bolus">Bolus time:</string>
+	<string name="info_time_infusion_begin">Infusion begin time:</string>
+	<string name="info_time_infusion_end">Infusion end time:</string>
+    <string name="info_time_follow_up">Follow-up end time:</string>
+    <string name="info_time">Time:</string>
+    <string name="info_date">Date:</string>
+    <string name="title_time_onset">Editing symptom onset time:</string>
+	<string name="title_time_estimate_arrival">Editing estimated arrival time:</string>
+	<string name="title_time_door">Editing patient at door time:</string>
+	<string name="title_time_ct_begin">Editing CT begin time:</string>
+	<string name="title_time_ct_end">Editing CT end time:</string>
+	<string name="title_time_thrombo_decision">Editing thrombolysis decision time:</string>
+	<string name="title_time_bolus">Editing bolus time:</string>
+	<string name="title_time_infusion_begin">Editing infusion begin time:</string>
+	<string name="title_time_infusion_end">Editing infusion end time:</string>
+    <string name="title_time_follow_up">Editing follow-up end time:</string>
+    
+</resources>

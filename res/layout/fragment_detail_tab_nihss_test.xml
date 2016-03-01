@@ -1,0 +1,1002 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/info_total_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="15dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_1a"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_1a_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_1a_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_1a_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1a_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_1a_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1a_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_1a_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1a_3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_1b"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_1b_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_1b_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_1b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1b_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_1b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1b_2" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_1c"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_1c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_1c_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_1c_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_1c_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1c_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_1c_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_1c_2" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_2_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_2_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_2_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_2_2" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_3"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_3_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_3_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_3_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_3_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_3_3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_4_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_4_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_4_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_4_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_4_3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_5a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView android:id="@+id/comple_nihss_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle" >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_5a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/comple_nihss_5a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/nihss_question_right"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_5_0" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_4" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5a_un"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_un" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_5b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/comple_nihss_5b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/nihss_question_left"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_5_0" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_4" />
+
+                    <RadioButton
+                        android:id="@+id/radio_5b_un"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_un" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:divider="?android:attr/dividerHorizontal"
+                android:orientation="horizontal"
+                android:showDividers="middle" >
+
+                <RadioGroup
+                    android:id="@+id/radio_group_6a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/comple_nihss_6a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/nihss_question_right"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_5_0" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_6_1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_4" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6a_un"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_un" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_6b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/comple_nihss_6b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/nihss_question_left"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_5_0" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_6_1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_3" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_4" />
+
+                    <RadioButton
+                        android:id="@+id/radio_6b_un"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/radio_5_un" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_7"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_7_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_7_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_7_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_7_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_un"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_5_un" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_8"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_8_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_8_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_8_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_8_2" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_9"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_9_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_9_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_9_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_9_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_9_3" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_10"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_10_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_10_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_10_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_10_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_10_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_10_2" />
+
+                <RadioButton
+                    android:id="@+id/radio_10_un"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_10_un" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_question_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn" />
+
+                <TextView
+                    android:id="@+id/comple_nihss_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="@string/nihss_question_11"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_11_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_11_0" />
+
+                <RadioButton
+                    android:id="@+id/radio_11_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_11_1" />
+
+                <RadioButton
+                    android:id="@+id/radio_11_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/radio_11_2" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/imgbtn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_finish" />
+    
+    <Button
+        android:id="@+id/imgbtn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imgbtn_finish"
+        android:layout_alignBottom="@id/imgbtn_finish"
+        android:layout_marginRight="15dp"
+        android:text="@string/imgbtn_back" />
+
+</RelativeLayout>

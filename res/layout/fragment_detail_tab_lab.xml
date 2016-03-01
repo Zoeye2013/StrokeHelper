@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_patient_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/row_one"
+        android:background="@color/dark_blue" />
+
+    <ScrollView
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_one"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/view_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_lab_status" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/dark_blue" />
+
+            <include
+                android:id="@+id/view_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_lab_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/dark_blue" />
+
+            <include
+                android:id="@+id/view_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_lab_results" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+         <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    -->
+
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_save" />
+
+</RelativeLayout>

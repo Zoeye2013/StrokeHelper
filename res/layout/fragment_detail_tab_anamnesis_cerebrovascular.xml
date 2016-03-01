@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_cerebrovascular_incidents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_cerebrovascular_incidents" />
+
+        <TextView
+            android:id="@+id/comple_cerebrovascular_incidents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_anamnesis_cerebrovascular_incidents"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_cerebrovascular_incidents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_cerebrovascular_incidents_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_no"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_cerebrovascular_incidents_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_yes"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_cerebrovascular_incidents_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_unknown"
+                android:textSize="14sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/imgbtn_done_cerebrovascular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_quesion_cerebrovascular_incidents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/question_specify_cerebrovascular_incidents"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/radio_cerebrovascular_incidents_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/radio_cerebrovascular_incidents_1"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_cerebrovascular_incidents_2"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/radio_cerebrovascular_incidents_5"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/radio_cerebrovascular_incidents_3"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_cerebrovascular_incidents_4"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/radio_other_critical"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/radio_cerebrovascular_incidents_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/radio_other_not_critical"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

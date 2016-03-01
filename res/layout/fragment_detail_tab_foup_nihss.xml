@@ -1,0 +1,575 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_nihss"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button android:id="@+id/imgbtn_nihss_0h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/imgbtn_nihss_0h" />
+
+            <Button android:id="@+id/imgbtn_nihss_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/imgbtn_nihss_1h"/>
+
+            <Button android:id="@+id/imgbtn_nihss_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/imgbtn_nihss_24h"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/info_nihss_total_point"
+                android:textStyle="bold" />
+
+            <TextView 
+                android:id="@+id/info_point_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"  />
+
+            <TextView android:id="@+id/info_point_total_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty" 
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/info_point_total_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty" 
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_1a" />
+
+            <TextView
+                android:id="@+id/info_point_1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1a_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1a_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_1b" />
+
+            <TextView
+                android:id="@+id/info_point_1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1b_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1b_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_1c" />
+
+            <TextView
+                android:id="@+id/info_point_1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1c_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_1c_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_2" />
+
+            <TextView
+                android:id="@+id/info_point_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_2_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_2_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_3" />
+
+            <TextView
+                android:id="@+id/info_point_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_3_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_3_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_4" />
+
+            <TextView
+                android:id="@+id/info_point_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_4_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView android:id="@+id/info_point_4_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_5a" />
+
+            <TextView
+                android:id="@+id/info_point_5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_5a_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_5a_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_5b" />
+
+            <TextView
+                android:id="@+id/info_point_5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_5b_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_5b_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_6a" />
+
+            <TextView
+                android:id="@+id/info_point_6a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_6a_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_6a_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_6b" />
+
+            <TextView
+                android:id="@+id/info_point_6b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_6b_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_6b_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@color/table_blue_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_7" />
+
+            <TextView
+                android:id="@+id/info_point_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_7_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_7_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_8" />
+
+            <TextView
+                android:id="@+id/info_point_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_8_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_8_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_9" />
+
+            <TextView android:id="@+id/info_point_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_9_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_9_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue"  >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_10" />
+
+            <TextView
+                android:id="@+id/info_point_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_10_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                android:id="@+id/info_point_10_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@color/table_blue_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:text="@string/nihss_question_11" />
+
+            <TextView
+                android:id="@+id/info_point_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                 android:id="@+id/info_point_11_1h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+
+            <TextView
+                 android:id="@+id/info_point_11_24h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="@string/info_nihss_empty"  />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

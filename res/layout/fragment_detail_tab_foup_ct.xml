@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/info_control_ct"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_no_visible_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_no_visible_sign"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_hyper_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_hyper_sign"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_early_infarct_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_early_infarct_sign"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_bleeding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_bleeding"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_ischemia_less"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_ischemia_less"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_ischemia_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_ischemia_more"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_tumor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_tumor"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_abscess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_abscess"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_other"
+            android:textSize="14sp" />
+    </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"     
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/imgbtn_save" />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/imgbtn_save">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/radio_interrupt_process_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_interrupt_process_1"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_interrupt_process_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_interrupt_process_2"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_interrupt_process_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_interrupt_process_3"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/radio_interrupt_process_4"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/imgbtn_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/imgbtn_show_contras" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/radio_interrupt_process_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_interrupt_process_5"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/view_other_than_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" 
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_interrupt_process_other_1"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_2"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_3"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_4"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_5"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_6"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_interrupt_process_other_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_interrupt_process_other_7"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/radio_interrupt_process_other_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/radio_other_what"
+                    android:textSize="14sp" />
+
+                <fi.etla.strokehelper.common.MyEditText
+                    android:id="@+id/edit_other_what"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="text"
+                    android:minWidth="250dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

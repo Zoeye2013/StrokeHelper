@@ -1,0 +1,22 @@
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabgroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/tab_decision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTop="@drawable/tab_decision" />
+    <RadioButton
+        android:id="@+id/tab_follow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableTop="@drawable/tab_follow_up" />
+    
+</RadioGroup>

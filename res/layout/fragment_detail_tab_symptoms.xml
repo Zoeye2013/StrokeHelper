@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_patient_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/row_one"
+        android:background="@color/dark_blue" />
+
+    <ScrollView
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_one"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include android:id="@+id/view_birthday_and_onset_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/fragment_common_birthday_and_onset_time" />
+
+            <include android:id="@+id/view_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                layout="@layout/fragment_common_symptoms" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+         <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    -->
+
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_save" />
+
+</RelativeLayout>

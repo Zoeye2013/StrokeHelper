@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/part_estimate_arrival_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView android:id="@+id/comple_estimate_arrival_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/info_symptom_estimate_arrival_time"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/picker_estimate_arrival_time_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=":"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/picker_estimate_arrival_time_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_date"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/picker_estimate_arrival_time_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/part_estimate_arrival_time_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_symptom_estimate_arrival_time"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/info_estimate_arrival_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_edit_estimate_arrival_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/imgbtn_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </TableRow>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/togbtn_lock_estimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/toggle_lock_btn"
+        android:checked="true"
+        android:textOff=""
+        android:textOn="" />
+
+</LinearLayout>

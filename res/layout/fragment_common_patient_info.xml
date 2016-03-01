@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <Button android:id="@+id/imgbtn_new_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/imgbtn_new_patient" />
+    
+    <!-- <Button android:id="@+id/imgbtn_interr_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@id/imgbtn_new_patient"
+        android:layout_marginRight="10dp"
+        android:text="@string/imgbtn_interr_process"
+        android:visibility="gone" /> -->
+    
+    <TextView
+        android:id="@+id/info_patient_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/imgbtn_new_patient"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_patient_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgbtn_new_patient"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/info_patient_type"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_patient_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imgbtn_new_patient"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/info_patient_id"
+        android:textSize="16sp" 
+        android:textStyle="bold"/>
+
+    <!--
+             <ImageButton
+            android:id="@+id/imgbtn_new_patient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imgbtn_new_patient" />
+    -->
+    
+    <!-- <Button
+        android:id="@+id/imgbtn_new_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="@string/imgbtn_new_patient" /> -->
+
+</RelativeLayout>

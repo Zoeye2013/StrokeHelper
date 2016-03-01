@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_patient_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/row_one"
+        android:background="@color/dark_blue" />
+
+    <!--
+         <include android:id="@+id/row_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_one"
+                layout="@layout/fragment_common_birthday_and_onset_time" />
+    -->
+
+
+    <!--
+         <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_two" />
+    -->
+
+    <TextView
+        android:id="@+id/info_already_at_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/bright_blue"
+        android:text="@string/info_door_already_at_door"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/imgbtn_patient_at_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/info_already_at_door"
+        android:layout_centerHorizontal="true"
+        android:text="@string/imgbtn_patient_at_door" />
+
+    <!--
+         <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+    -->
+
+</RelativeLayout>

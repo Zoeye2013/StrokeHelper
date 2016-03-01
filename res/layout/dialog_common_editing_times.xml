@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/info_time"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/picker_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=":"
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/picker_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="@string/info_date"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/picker_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp" />
+        </TableRow>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/imgbtn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/imgbtn_save" />
+
+        <Button
+            android:id="@+id/imgbtn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imgbtn_save"
+            android:text="@string/imgbtn_cancel" />
+    </RelativeLayout>
+
+</LinearLayout>

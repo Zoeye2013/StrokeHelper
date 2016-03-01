@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/spinner_drop_down_bg">
+    
+    <TextView 
+        android:id="@+id/spinner_column_birth_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+    
+    <View android:id="@+id/separator_1"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="@color/dark_blue"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+    
+    <TextView 
+        android:id="@+id/spinner_column_onset_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+    
+    <View android:id="@+id/separator_2"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:background="@color/dark_blue"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+    
+    <TextView 
+        android:id="@+id/spinner_column_on_hospital_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"/>
+
+</LinearLayout>

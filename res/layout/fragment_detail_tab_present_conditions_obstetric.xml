@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_help_obstetric_contraindications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/info_btn"
+                    android:contentDescription="@string/imgbtn_help_obstetric_contraindications" />
+
+                <TextView android:id="@+id/comple_obstetric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/info_present_obstetric_contraindications"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_obstetric_contraindications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_obstetric_contraindications_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_obstetric_contraindications_yes_relative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes_relative"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_obstetric_contraindications_hellp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_hellp"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_obstetric_contraindications_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_question_obstetric_contraindications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple"
+            android:text="@string/question_obstetric_contraindications"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/radio_obstetric_contraindications_pregnancy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_obstetric_contraindications_pregnancy"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_obstetric_contraindications_placenta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_obstetric_contraindications_placenta"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/radio_obstetric_contraindications_other_relative_critical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_other_relative_critical"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/radio_obstetric_contraindications_other_not_critical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_other_not_critical"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

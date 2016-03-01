@@ -1,0 +1,595 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        android:showDividers="middle" >
+
+        <TableLayout
+            android:id="@+id/part_symptoms_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/view_symptom_side"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/comple_symptom_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_side"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_symptom_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_symptom_side_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_right"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_symptom_side_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_left"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_symptom_side_both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_both"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_facial_palsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_facial_palsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_facial_palsy"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_facial_palsy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_facial_palsy_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_facial_palsy_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_care_for_self"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_care_for_self"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_care_for_self"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_care_for_self"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_care_for_self_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_care_for_self_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_care_for_self_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_quick_recover_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_quick_recover_symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_quick_recover_symptoms"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_quick_recover_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_quick_recover_symptoms_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_quick_recover_symptoms_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_convulsion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_help_convulsion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info_btn"
+                        android:contentDescription="@string/imgbtn_help_convulsion" />
+
+                    <TextView
+                        android:id="@+id/comple_convulsion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/info_symptom_convulsion"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_convulsion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_convulsion_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_convulsion_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_convulsion_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/part_symptoms_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/view_symptom_limb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/comple_limb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_limb"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_limb_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_limb_symptoms_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_limb_symptoms_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_speech_disorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_speech_disorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_speech_disorder"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_speech_disorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_speech_disorder_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_speech_disorder_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_terminal_disease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_terminal_disease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_terminal_disease"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_terminal_disease"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_terminal_disease_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_mild_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_help_mild_symptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info_btn"
+                        android:contentDescription="@string/imgbtn_help_mild_symptoms" />
+
+                    <TextView
+                        android:id="@+id/comple_mild_symptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:text="@string/info_symptom_mild_symptoms"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_mild_symptoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_mild_symptoms_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mild_symptoms_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_suggest_sav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/comple_suggest_sav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="@string/info_symptom_suggest_sav"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_suggest_sav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_suggest_sav_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_suggest_sav_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/view_anticoagulant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_help_anticoagulant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/info_btn"
+                        android:contentDescription="@string/imgbtn_help_anticoagulant" />
+
+                    <TextView
+                        android:id="@+id/comple_anticoagulant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/info_symptom_anticoagulant"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_anticoagulant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_anticoagulant_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anticoagulant_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_anticoagulant_unknown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_unknown"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/view_basilaris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_basilaris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_basilaris" />
+
+        <TextView
+            android:id="@+id/comple_basilaris"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="@string/info_symptom_basilaris"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_basilaris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_basilaris_main_suspicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_main_suspicion"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_basilaris_less_probable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_less_probable"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_basilaris_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_unknown"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </TableRow>
+
+</LinearLayout>

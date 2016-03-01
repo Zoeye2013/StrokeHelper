@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/info_select_patient"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_select_patient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_bg"
+        android:layout_gravity="center_vertical"
+        android:prompt="@string/spinner_promt"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:minWidth="200dp"/>
+
+</LinearLayout>

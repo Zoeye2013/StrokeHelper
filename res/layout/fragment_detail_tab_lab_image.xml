@@ -1,0 +1,411 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/info_imaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_imaging"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/info_lab_admission_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_admission_ct"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_recommend_admission_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_recommend"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/imgbtn_done_admission_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"/>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_no_visible_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_no_visible_sign"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_hyper_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_hyper_sign"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_early_infarct_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_early_infarct_sign"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_bleeding"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_bleeding"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_ischemia_less"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_ischemia_less"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_ischemia_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_ischemia_more"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_tumor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_tumor"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_abscess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_abscess"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/radio_admission_ct_other"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radio_admission_ct_other"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/view_lab_perfusion_ct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" >
+
+        <TextView android:id="@+id/comple_perfusion_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/info_lab_perfusion_ct"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_recommend_perfusion_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_recommend"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_persusion_ct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_persusion_ct_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_lab_ct_done"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_persusion_ct_not_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_lab_ct_not_done"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/view_done_perfusion_ct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info_lab_done_persusion_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_done_persusion_ct"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_done_persusion_ct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_done_persusion_ct_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_done_perfusion_ct_1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_done_persusion_ct_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_done_perfusion_ct_2"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_done_persusion_ct_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_done_perfusion_ct_3"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_not_done_perfusion_ct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_not_done_persusion_ct"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <fi.etla.strokehelper.common.MyEditText
+            android:id="@+id/edit_text_not_done_persusion_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:minWidth="250dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/view_lab_ct_angiography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" >
+
+        <TextView android:id="@+id/comple_ct_angiography"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/info_lab_ct_angiography"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_recommend_ct_angiography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_recommend"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_ct_angiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_ct_angiography_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_lab_ct_done"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_ct_angiography_not_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/info_lab_ct_not_done"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/view_done_ct_angiography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info_lab_done_ct_angiography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_done_ct_angiography"
+            android:textColor="@color/purple"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_done_ct_angiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_done_ct_angiography_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:text="@string/radio_done_ct_angiography_1"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_done_ct_angiography_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="@string/radio_done_ct_angiography_2"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_done_ct_angiography_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/radio_done_ct_angiography_3"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_done_ct_angiography_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:text="@string/radio_done_ct_angiography_4"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_not_done_ct_angiography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_not_done_ct_angiography"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <fi.etla.strokehelper.common.MyEditText
+            android:id="@+id/edit_text_not_done_ct_angiography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:minWidth="250dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

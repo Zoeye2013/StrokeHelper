@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/info_follow_up_not_yet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/imgbtn_finish_follow_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:text="@string/imgbtn_finish_follow_up" />
+
+            <include
+                android:id="@+id/view_alteplase_dose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_foup_aplteplase" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/dark_blue" />
+
+            <include
+                android:id="@+id/view_nihss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_foup_nihss" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/dark_blue" />
+
+            <include
+                android:id="@+id/view_rr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_foup_rr" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/dark_blue" />
+
+            <include
+                android:id="@+id/view_ct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/fragment_detail_tab_foup_ct" />
+        </LinearLayout>
+    </ScrollView>
+    <!--
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_save" />
+    -->
+
+</RelativeLayout>

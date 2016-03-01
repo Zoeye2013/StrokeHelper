@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp" >
+
+    <include
+        android:id="@+id/row_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/fragment_common_patient_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/row_one"
+        android:background="@color/dark_blue" />
+
+    <RadioGroup
+        android:id="@+id/row_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_one"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/radio_pre_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_predoor" />
+
+        <RadioButton
+            android:id="@+id/radio_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_door" />
+
+        <RadioButton
+            android:id="@+id/radio_post_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_postdoor" />
+    </RadioGroup>
+
+    <ScrollView
+        android:id="@+id/row_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row_two"
+        android:fillViewport="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/view_birthday_and_onset_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/fragment_common_birthday_and_onset_time" />
+
+            <include
+                android:id="@+id/view_symptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                layout="@layout/fragment_common_symptoms" />
+
+            <TableLayout
+                android:id="@+id/view_thrombolysis_candidate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/dark_blue" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:id="@+id/comple_thrombo_candidate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:text="@string/info_symptom_thrombolysis_candidate"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_thrombolysis_candidate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_thrombolysis_candidate_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_yes"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_thrombolysis_candidate_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/radio_no"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <include
+                android:id="@+id/view_estimate_arrival_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                layout="@layout/fragment_common_estimate_arrival_time" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+         <ImageButton android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/imgbtn_save" />
+    -->
+
+    <Button
+        android:id="@+id/imgbtn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/imgbtn_save" />
+
+</RelativeLayout>

@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/info_status_measurements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_status_measurements"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout android:id="@+id/view_rr_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_rr" />
+
+        <TextView android:id="@+id/comple_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_rr_systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr_separator" />
+
+        <TextView
+            android:id="@+id/info_rr_diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr_unit" />
+        
+        <Button
+            android:id="@+id/imgbtn_done_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TableRow android:id="@+id/view_rr_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/info_lab_rr_systolic" />
+
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_rr_systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_rr_diastolic" />
+
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_rr_diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"/>
+    </TableRow>
+
+    <LinearLayout android:id="@+id/view_rr_after_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/comple_rr_after"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr_after_treat"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_rr_after_treat_systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr_separator" />
+
+        <TextView
+            android:id="@+id/info_rr_after_treat_diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_rr_unit" />
+        
+        <Button
+            android:id="@+id/imgbtn_done_rr_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TableRow android:id="@+id/view_rr_after_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="@string/info_lab_rr_systolic" />
+
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_rr_after_treat_systolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/info_lab_rr_diastolic" />
+
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_rr_after_treat_diastolic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="5dp"/>
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_modified_rankin_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_modified_rankin_scale" />
+
+        <TextView
+            android:id="@+id/comple_modified_rankin_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_modified_rankin_scale"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_modified_rankin_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group_modified_rankin_scale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_modified_rankin_scale_0"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_2"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_3"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_4"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_5"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_modified_rankin_scale_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/radio_modified_rankin_scale_6"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</LinearLayout>

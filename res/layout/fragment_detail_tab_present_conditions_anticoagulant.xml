@@ -1,0 +1,262 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_anticoagulant_medication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_anticoagulant" />
+
+        <TextView android:id="@+id/comple_anticoagulant"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_symptom_anticoagulant"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_anticoagulant_medication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_no"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_yes"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/radio_unknown"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_question_anticoagulant_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/question_anticoagulant_treatment"
+            android:textColor="@color/purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_anticoagulant_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_treatment_heparin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_anticoagulant_treatment_heparin"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/view_question_heparin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/question_heparin"
+                    android:textColor="@color/purple"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_heparin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_heparin_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_heparin_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_treatment_dabigatran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_anticoagulant_treatment_dabigatran"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/view_question_dabigatran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/question_dabigatran"
+                    android:textColor="@color/purple"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_dabigatran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_dabigatran_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_dabigatran_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_treatment_apiksaban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_anticoagulant_treatment_apiksaban"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/view_question_apiksaban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/question_apiksaban"
+                    android:textColor="@color/purple"
+                    android:textSize="14sp"
+                    android:layout_weight="4"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group_apiksaban"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_apiksaban_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_yes"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_apiksaban_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/radio_no"
+                        android:textSize="14sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_treatment_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_other"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radio_anticoagulant_treatment_unknown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radio_unknown"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

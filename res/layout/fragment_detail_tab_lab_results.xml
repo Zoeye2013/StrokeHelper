@@ -1,0 +1,322 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"  >
+
+    <TextView android:id="@+id/info_laboratory_results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_laboratory_results"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout android:id="@+id/view_quick_inr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_quick_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_quick_inr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_quick_inr"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_quick_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_quick_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        
+        <Button
+            android:id="@+id/imgbtn_done_quick_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/view_inr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_inr"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+
+       <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+       
+       <Button
+            android:id="@+id/imgbtn_done_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/view_aptt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_aptt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_aptt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_aptt"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_aptt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_aptt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/imgbtn_done_aptt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout  android:id="@+id/view_p_trombai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_p_trombai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_p_trombai" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_p_trombai"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_p_trombai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_p_trombai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view_b_trom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_b_trom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_b_trom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_b_trom"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_b_trom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_b_trom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        
+        <Button
+            android:id="@+id/imgbtn_done_b_trom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view_b_gluc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_b_gluc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_b_gluc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_b_gluc"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_b_gluc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_b_gluc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        
+        <Button
+            android:id="@+id/imgbtn_done_b_gluc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/view_b_gluc_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone"  >
+
+        <ImageButton
+            android:id="@+id/imgbtn_help_b_gluc_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_btn"
+            android:contentDescription="@string/imgbtn_help_b_gluc_after" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/info_lab_b_gluc_after"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_b_gluc_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
+        
+        <fi.etla.strokehelper.common.CustomizeSeekbar
+            android:id="@+id/seek_bar_b_gluc_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"/>
+        <Button
+            android:id="@+id/imgbtn_done_b_gluc_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/imgbtn_done"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/table_blue_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/info_indications"
+                android:paddingLeft="40dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:background="@color/table_blue"/>
+
+            <TextView
+                android:id="@+id/info_indications"
+                android:layout_width="wrap_content"
+                android:text="@string/info_none"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/imgbtn_indications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imgbtn_show_contras" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/table_blue_light">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/info_contraindications" 
+                android:paddingLeft="40dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:background="@color/table_blue"/>
+
+            <TextView
+                android:id="@+id/info_contraindications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:paddingLeft="20dp"
+                android:text="@string/info_none"/>
+
+            <Button
+                android:id="@+id/imgbtn_contraindications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imgbtn_show_contras" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/info_confirm_thrombolysis_decision"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/imgbtn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/radio_yes" />
+
+        <Button
+            android:id="@+id/imgbtn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/radio_no" />
+    </RelativeLayout>
+
+</LinearLayout>
